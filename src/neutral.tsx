@@ -71,6 +71,29 @@ const capabilities = [
   "Team leadership",
 ];
 
+const deliverySystem = [
+  {
+    number: "01",
+    title: "Discover & scope",
+    copy: "Translate business goals into technical requirements, delivery assumptions, estimates and a scope teams can actually execute.",
+  },
+  {
+    number: "02",
+    title: "Align the room",
+    copy: "Create shared ownership across merchants, designers, developers and leadership—with decisions and dependencies made visible.",
+  },
+  {
+    number: "03",
+    title: "Run the delivery",
+    copy: "Manage sprints, budgets, risks, QA and UAT while protecting momentum and keeping stakeholders ahead of what comes next.",
+  },
+  {
+    number: "04",
+    title: "Learn & grow",
+    copy: "Turn post-launch signals, CRO opportunities and retainer priorities into the next measurable improvement for the merchant.",
+  },
+];
+
 function Arrow() {
   return <span aria-hidden="true">↗</span>;
 }
@@ -126,6 +149,11 @@ function NeutralPortfolio() {
                 <a href="#work">Explore my impact <span aria-hidden="true">→</span></a>
                 <a href="mailto:taskeenmeher13@gmail.com">Start a conversation <Arrow /></a>
               </div>
+              <div className="n-hero-brief" aria-label="Current professional snapshot">
+                <p><span>Current</span><strong>Technical PM at Wiro</strong></p>
+                <p><span>Coverage</span><strong>Discovery → launch → growth</strong></p>
+                <p><span>Strength</span><strong>Client trust + delivery control</strong></p>
+              </div>
             </div>
           </div>
 
@@ -161,6 +189,21 @@ function NeutralPortfolio() {
                 <li><span>02</span> Surface risk before it becomes escalation</li>
                 <li><span>03</span> Connect every sprint to merchant value</li>
               </ul>
+            </div>
+          </div>
+          <div className="n-delivery-system" data-reveal>
+            <div className="n-system-heading">
+              <span>How I run delivery</span>
+              <p>A practical operating system for moving from an ambiguous request to a measurable ecommerce outcome.</p>
+            </div>
+            <div className="n-system-grid">
+              {deliverySystem.map((item) => (
+                <article key={item.number}>
+                  <span>{item.number}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.copy}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
