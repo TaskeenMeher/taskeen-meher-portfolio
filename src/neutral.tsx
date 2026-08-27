@@ -1,6 +1,7 @@
 import { StrictMode, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./neutral.css";
+import { setupParallax } from "./parallax";
 
 const outcomes = [
   {
@@ -102,6 +103,7 @@ function NeutralPortfolio() {
   const base = import.meta.env.BASE_URL;
 
   useEffect(() => {
+    const cleanupParallax = setupParallax();
     const items = document.querySelectorAll<HTMLElement>("[data-reveal]");
     const observer = new IntersectionObserver(
       (entries) => entries.forEach((entry) => {
@@ -113,7 +115,10 @@ function NeutralPortfolio() {
       { threshold: 0.12 },
     );
     items.forEach((item) => observer.observe(item));
-    return () => observer.disconnect();
+    return () => {
+      cleanupParallax();
+      observer.disconnect();
+    };
   }, []);
 
   return (
@@ -138,11 +143,11 @@ function NeutralPortfolio() {
       <main id="main">
         <section className="n-hero n-shell" id="top">
           <div className="n-hero-copy">
-            <div className="n-hero-left">
+            <div className="n-hero-left" data-parallax="0.016">
               <p className="n-eyebrow">Hello, I&apos;m</p>
               <h1>Taskeen<br />Meher.</h1>
             </div>
-            <div className="n-hero-right">
+            <div className="n-hero-right" data-parallax="0.01">
               <p className="n-role">Technical Project Manager<br />Shopify ecosystem</p>
               <p className="n-intro">I align people, scope and growth goals to turn complex ecommerce programs into calm, measurable delivery.</p>
               <div className="n-hero-actions">
@@ -157,7 +162,7 @@ function NeutralPortfolio() {
             </div>
           </div>
 
-          <div className="n-portrait-stage" aria-label="Taskeen Meher and career highlights">
+          <div className="n-portrait-stage" aria-label="Taskeen Meher and career highlights" data-parallax="0.024">
             <div className="n-shape n-shape-one" aria-hidden="true" />
             <div className="n-shape n-shape-two" aria-hidden="true" />
             <img src={`${base}taskeen-meher.jpg`} alt="Taskeen Meher, Technical Project Manager" />
@@ -219,7 +224,7 @@ function NeutralPortfolio() {
               {outcomes.map((outcome, index) => (
                 <article className="n-outcome" key={outcome.metric} data-reveal>
                   <div className="n-outcome-index">0{index + 1}</div>
-                  <strong>{outcome.metric}</strong>
+                  <strong data-parallax="0.01">{outcome.metric}</strong>
                   <p className="n-outcome-label">{outcome.label}</p>
                   <div className="n-outcome-copy">
                     <h3>{outcome.title}</h3>
@@ -276,7 +281,7 @@ function NeutralPortfolio() {
 
         <section className="n-contact n-shell" data-reveal>
           <p>Have a complex Shopify program?</p>
-          <h2>Let&apos;s make it<br />feel manageable.</h2>
+          <h2 data-parallax="0.008">Let&apos;s make it<br />feel manageable.</h2>
           <div>
             <a className="n-button n-button-light" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
             <a className="n-button n-button-outline" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>

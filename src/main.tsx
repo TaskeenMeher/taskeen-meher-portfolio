@@ -1,6 +1,7 @@
 import { StrictMode, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import { setupParallax } from "./parallax";
 
 const experience = [
   {
@@ -115,6 +116,7 @@ function App() {
   const base = import.meta.env.BASE_URL;
 
   useEffect(() => {
+    const cleanupParallax = setupParallax();
     const revealItems = document.querySelectorAll<HTMLElement>("[data-reveal]");
     const observer = new IntersectionObserver(
       (entries) => {
@@ -140,6 +142,7 @@ function App() {
     window.addEventListener("scroll", updateProgress, { passive: true });
 
     return () => {
+      cleanupParallax();
       observer.disconnect();
       window.removeEventListener("scroll", updateProgress);
     };
@@ -164,7 +167,7 @@ function App() {
 
       <main id="main">
         <section className="hero shell" id="top">
-          <div className="hero-pills" aria-label="Professional focus">
+          <div className="hero-pills" aria-label="Professional focus" data-parallax="0.012">
             <span className="pill pill-lilac">✦ Technical PM</span>
             <span className="pill pill-yellow">◫ Shopify Plus</span>
             <span className="pill pill-coral">↗ Ecommerce</span>
@@ -172,7 +175,7 @@ function App() {
           </div>
 
           <div className="hero-grid">
-            <div className="hero-copy-block">
+            <div className="hero-copy-block" data-parallax="0.018">
               <p className="hero-kicker">Hello, I&apos;m</p>
               <h1><span>Taskeen</span><span>Meher</span></h1>
               <h2>Technical Project Manager<br />in the Shopify ecosystem.</h2>
@@ -185,7 +188,7 @@ function App() {
               </div>
             </div>
 
-            <figure className="hero-portrait">
+            <figure className="hero-portrait" data-parallax="0.028">
               <div className="portrait-shadow portrait-shadow-one" aria-hidden="true" />
               <div className="portrait-shadow portrait-shadow-two" aria-hidden="true" />
               <div className="portrait-image-wrap">
@@ -198,7 +201,7 @@ function App() {
             </figure>
           </div>
 
-          <div className="proof" aria-label="Career highlights">
+          <div className="proof" aria-label="Career highlights" data-parallax="0.01">
             <div className="proof-lilac"><strong>4+</strong><span>years leading digital delivery</span></div>
             <div className="proof-blue"><strong>100%</strong><span>on-time delivery at Wiro</span></div>
             <div className="proof-coral"><strong>4.5/5</strong><span>average client satisfaction</span></div>
@@ -252,7 +255,7 @@ function App() {
               {impact.map((item) => (
                 <article className={`impact-card ${item.className}`} key={item.number} data-reveal>
                   <div className="impact-topline"><span>{item.number}</span><span>Selected outcome</span></div>
-                  <div className="impact-metric"><strong>{item.metric}</strong><span>{item.metricLabel}</span></div>
+                  <div className="impact-metric"><strong data-parallax="0.012">{item.metric}</strong><span>{item.metricLabel}</span></div>
                   <div className="impact-copy">
                     <h3>{item.title}</h3>
                     <p>{item.copy}</p>
