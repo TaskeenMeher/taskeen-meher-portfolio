@@ -45,6 +45,45 @@ const experience = [
   },
 ];
 
+const impact = [
+  {
+    number: "01",
+    metric: "+2%",
+    metricLabel: "conversion-rate impact",
+    title: "Performance-led delivery",
+    copy: "Turned optimisation priorities into a controlled Shopify Plus delivery plan—improving conversion while lifting average site-speed scores by 75%.",
+    tags: ["Shopify Plus", "CRO", "Performance"],
+    className: "impact-card-lilac",
+  },
+  {
+    number: "02",
+    metric: "100%",
+    metricLabel: "on time & within budget",
+    title: "Control without friction",
+    copy: "Delivered end-to-end Shopify work with zero escalations through clear scoping, agile rituals and proactive risk management.",
+    tags: ["Delivery", "UAT", "Risk"],
+    className: "impact-card-blue",
+  },
+  {
+    number: "03",
+    metric: "2×",
+    metricLabel: "faster team delivery",
+    title: "Less drag. More flow.",
+    copy: "Managed Project and SSM teams, strengthened onboarding and removed operational blockers so work could move twice as fast.",
+    tags: ["Operations", "Teams", "Process"],
+    className: "impact-card-coral",
+  },
+  {
+    number: "04",
+    metric: "15–20+",
+    metricLabel: "tickets in motion",
+    title: "Momentum after launch",
+    copy: "Balanced enhancements, CRO initiatives and technical work across high-volume retainer backlogs without losing sight of merchant goals.",
+    tags: ["Retainers", "Prioritisation", "Growth"],
+    className: "impact-card-yellow",
+  },
+];
+
 const capabilities = [
   {
     number: "01",
@@ -68,6 +107,10 @@ const capabilities = [
   },
 ];
 
+function Arrow() {
+  return <span aria-hidden="true">↗</span>;
+}
+
 function App() {
   const base = import.meta.env.BASE_URL;
 
@@ -82,7 +125,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.12 },
+      { threshold: 0.1 },
     );
 
     revealItems.forEach((item) => observer.observe(item));
@@ -109,62 +152,62 @@ function App() {
 
       <header className="site-header">
         <nav className="nav shell" aria-label="Primary navigation">
-          <a className="mark" href="#top" aria-label="Taskeen Meher, home">TM</a>
+          <a className="mark" href="#top" aria-label="Taskeen Meher, home"><span>TM</span></a>
           <div className="nav-center">
             <a href="#impact">Impact</a>
             <a href="#experience">Experience</a>
             <a href="#capabilities">Capabilities</a>
           </div>
-          <a className="nav-link" href="mailto:taskeenmeher13@gmail.com">
-            Let&apos;s talk <span aria-hidden="true">↗</span>
-          </a>
+          <a className="nav-cta" href="mailto:taskeenmeher13@gmail.com">Get in touch <Arrow /></a>
         </nav>
       </header>
 
       <main id="main">
         <section className="hero shell" id="top">
-          <div className="hero-top">
-            <p className="eyebrow"><span /> Bangalore · Shopify ecosystem</p>
-            <p className="hero-index">Portfolio / 2026</p>
+          <div className="hero-pills" aria-label="Professional focus">
+            <span className="pill pill-lilac">✦ Technical PM</span>
+            <span className="pill pill-yellow">◫ Shopify Plus</span>
+            <span className="pill pill-coral">↗ Ecommerce</span>
+            <span className="pill pill-blue">⌁ Bangalore</span>
           </div>
 
-          <h1>Complex Shopify <span>delivery,</span><br /><em>made calm.</em></h1>
-
-          <div className="hero-bottom">
-            <div>
-              <p className="hero-copy">
-                I&apos;m Taskeen, a Technical Project Manager aligning people, scope, and growth goals across Shopify &amp; Shopify Plus.
+          <div className="hero-grid">
+            <div className="hero-copy-block">
+              <p className="hero-kicker">Hello, I&apos;m</p>
+              <h1><span>Taskeen</span><span>Meher</span></h1>
+              <h2>Technical Project Manager<br />in the Shopify ecosystem.</h2>
+              <p className="hero-intro">
+                I turn complex ecommerce builds into clear plans, aligned teams and measurable launches—without the delivery drama.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#impact">See my impact <span aria-hidden="true">↓</span></a>
-                <a className="button button-text" href={`${base}Taskeen-Meher-Resume.pdf`} download>
-                  Download résumé <span aria-hidden="true">↗</span>
-                </a>
+                <a className="button button-paper" href={`${base}Taskeen-Meher-Resume.pdf`} download>Download résumé <Arrow /></a>
               </div>
             </div>
 
-            <div className="delivery-loop" aria-label="Taskeen's delivery approach">
-              <p>My delivery loop</p>
-              <ol>
-                <li><span>01</span> Scope the right problem</li>
-                <li><span>02</span> Align the right people</li>
-                <li><span>03</span> Ship with control</li>
-                <li><span>04</span> Learn, then grow</li>
-              </ol>
-            </div>
+            <figure className="hero-portrait">
+              <div className="portrait-shadow portrait-shadow-one" aria-hidden="true" />
+              <div className="portrait-shadow portrait-shadow-two" aria-hidden="true" />
+              <div className="portrait-image-wrap">
+                <img src={`${base}taskeen-meher.jpg`} alt="Taskeen Meher, Technical Project Manager" />
+              </div>
+              <figcaption>
+                <span className="status-dot" />
+                Open to the right opportunity
+              </figcaption>
+            </figure>
           </div>
 
           <div className="proof" aria-label="Career highlights">
-            <div><strong>4+</strong><span>years in agency delivery</span></div>
-            <div><strong>100%</strong><span>on-time delivery at Wiro</span></div>
-            <div><strong>+2%</strong><span>conversion rate impact</span></div>
-            <div><strong>4.5/5</strong><span>average client satisfaction</span></div>
+            <div className="proof-lilac"><strong>4+</strong><span>years leading digital delivery</span></div>
+            <div className="proof-blue"><strong>100%</strong><span>on-time delivery at Wiro</span></div>
+            <div className="proof-coral"><strong>4.5/5</strong><span>average client satisfaction</span></div>
+            <div className="proof-yellow"><strong>+75%</strong><span>average site-speed score</span></div>
           </div>
         </section>
 
-        <section className="brand-strip" aria-label="Selected brands">
-          <p>Selected brand experience</p>
-          <div className="brand-track">
+        <section className="ticker" aria-label="Selected brand experience">
+          <div className="ticker-track">
             <div>
               <span>boAt</span><i>✦</i><span>Bestseller</span><i>✦</i><span>Health &amp; Glow</span><i>✦</i><span>Pavers England</span><i>✦</i><span>Durex</span><i>✦</i><span>Superkicks</span><i>✦</i><span>Kickgame</span><i>✦</i><span>Drip Moda</span><i>✦</i>
             </div>
@@ -174,104 +217,63 @@ function App() {
           </div>
         </section>
 
-        <section className="section about shell" id="about">
-          <div className="section-label" data-reveal>
-            <span>01</span>
-            <p>Profile</p>
+        <section className="section profile shell" id="about">
+          <div className="section-head" data-reveal>
+            <p>01 / Profile</p>
+            <span>Strategy ↔ Execution</span>
           </div>
-
-          <div className="about-grid">
-            <div className="about-copy" data-reveal>
-              <h2>Turning moving parts<br />into <em>momentum.</em></h2>
-              <p className="lead">
-                The best project management feels almost invisible: teams know what matters, clients know what&apos;s next, and delivery keeps moving.
-              </p>
-              <p>
-                Across premier Shopify agencies, I&apos;ve led cross-functional teams through scoping, design, build, QA, launch, and ongoing optimisation. I bring commercial context to technical conversations and structure to fast-moving ecommerce work.
-              </p>
-              <div className="principles">
-                <p><span>Clear over clever</span> Translate complexity into decisions people can act on.</p>
-                <p><span>Proactive over reactive</span> Surface risk before it becomes an escalation.</p>
-                <p><span>Outcomes over output</span> Connect every sprint to merchant growth.</p>
+          <div className="profile-grid">
+            <div className="profile-title" data-reveal>
+              <h2>I make complex<br />delivery feel <em>simple.</em></h2>
+            </div>
+            <div className="profile-copy" data-reveal>
+              <p className="lead">The best project management feels almost invisible.</p>
+              <p>Teams know what matters. Clients know what&apos;s next. Risks surface early, decisions stay documented, and every sprint connects back to a merchant outcome.</p>
+              <div className="profile-principles">
+                <span>Clear over clever</span>
+                <span>Proactive over reactive</span>
+                <span>Outcomes over output</span>
               </div>
             </div>
-
-            <figure className="portrait" data-reveal>
-              <div className="portrait-frame">
-                <img src={`${base}taskeen-meher.jpg`} alt="Taskeen Meher, Technical Project Manager" />
-                <span className="portrait-tag">Based in Bangalore</span>
-              </div>
-              <figcaption>
-                <span>Current</span>
-                Technical Project Manager · Wiro
-              </figcaption>
-            </figure>
           </div>
         </section>
 
         <section className="section impact" id="impact">
           <div className="shell">
-            <div className="section-label section-label-light" data-reveal>
-              <span>02</span>
-              <p>Selected impact</p>
+            <div className="section-head section-head-light" data-reveal>
+              <p>02 / Selected impact</p>
+              <span>Numbers tell the story</span>
             </div>
-
-            <div className="impact-intro" data-reveal>
-              <h2>Proof over<br /><em>promises.</em></h2>
-              <p>Selected outcomes across ecommerce delivery, growth, and team operations.</p>
+            <div className="impact-heading" data-reveal>
+              <h2>Work that moved<br />the <em>needle.</em></h2>
+              <p>Selected outcomes across ecommerce delivery, performance, growth and team operations.</p>
             </div>
-
             <div className="impact-grid">
-              <article className="impact-card impact-card-featured" data-reveal>
-                <div className="impact-meta"><span>01 / Performance</span><span>Shopify Plus</span></div>
-                <div className="metric-row"><strong>+2%</strong><span>CVR</span></div>
-                <div className="metric-row"><strong>+75%</strong><span>site speed score</span></div>
-                <div className="impact-copy">
-                  <h3>Performance-led delivery</h3>
-                  <p>Used data-informed prioritisation and structured optimisation to improve conversion and average site-speed scores.</p>
-                </div>
-              </article>
-
-              <article className="impact-card" data-reveal>
-                <div className="impact-meta"><span>02 / Delivery</span><span>Wiro</span></div>
-                <div className="single-metric"><strong>100%</strong><span>on time · within budget</span></div>
-                <div className="impact-copy">
-                  <h3>Control without friction</h3>
-                  <p>Delivered end-to-end Shopify work with zero escalations through clear scoping, agile rituals, and disciplined risk management.</p>
-                </div>
-              </article>
-
-              <article className="impact-card" data-reveal>
-                <div className="impact-meta"><span>03 / Operations</span><span>Growth99</span></div>
-                <div className="single-metric"><strong>2×</strong><span>delivery speed</span></div>
-                <div className="impact-copy">
-                  <h3>Less drag, more flow</h3>
-                  <p>Managed two teams and reduced roadblocks by strengthening process, prioritisation, and onboarding.</p>
-                </div>
-              </article>
-
-              <article className="impact-card impact-card-accent" data-reveal>
-                <div className="impact-meta"><span>04 / Retainers</span><span>Always-on</span></div>
-                <div className="single-metric"><strong>15–20+</strong><span>concurrent tickets</span></div>
-                <div className="impact-copy">
-                  <h3>Momentum after launch</h3>
-                  <p>Balance enhancements, CRO initiatives, and performance work across fast-moving retainer backlogs.</p>
-                </div>
-              </article>
+              {impact.map((item) => (
+                <article className={`impact-card ${item.className}`} key={item.number} data-reveal>
+                  <div className="impact-topline"><span>{item.number}</span><span>Selected outcome</span></div>
+                  <div className="impact-metric"><strong>{item.metric}</strong><span>{item.metricLabel}</span></div>
+                  <div className="impact-copy">
+                    <h3>{item.title}</h3>
+                    <p>{item.copy}</p>
+                  </div>
+                  <div className="impact-tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
 
         <section className="section experience shell" id="experience">
-          <div className="section-label" data-reveal>
-            <span>03</span>
-            <p>Experience</p>
+          <div className="section-head" data-reveal>
+            <p>03 / Experience</p>
+            <span>2021 — Present</span>
           </div>
-
           <div className="experience-layout">
-            <div className="experience-heading" data-reveal>
-              <h2>Built inside the<br /><em>Shopify ecosystem.</em></h2>
-              <p>Four years across premier and Plus agencies, from growth-stage merchants to enterprise and B2B programs.</p>
+            <div className="experience-intro" data-reveal>
+              <span className="mini-label">Shopify ecosystem</span>
+              <h2>Four years.<br />One clear<br /><em>through-line.</em></h2>
+              <p>Bring structure to fast-moving ecommerce teams while keeping the client, the commercial goal and the customer experience in view.</p>
             </div>
 
             <div className="timeline">
@@ -287,9 +289,7 @@ function App() {
                       <time>{item.period}</time>
                     </div>
                     <p className="timeline-summary">{item.summary}</p>
-                    <div className="tags">
-                      {item.tags.map((tag) => <span key={tag}>{tag}</span>)}
-                    </div>
+                    <div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                   </div>
                 </article>
               ))}
@@ -299,22 +299,20 @@ function App() {
 
         <section className="section capabilities" id="capabilities">
           <div className="shell">
-            <div className="section-label" data-reveal>
-              <span>04</span>
-              <p>Capabilities</p>
+            <div className="section-head" data-reveal>
+              <p>04 / Capabilities</p>
+              <span>The operating system</span>
             </div>
             <div className="capabilities-heading" data-reveal>
               <h2>What I bring<br />to the <em>table.</em></h2>
-              <p>Equal parts delivery discipline, technical curiosity, and client empathy.</p>
+              <p>Equal parts delivery discipline, technical curiosity and client empathy.</p>
             </div>
             <div className="capability-grid">
-              {capabilities.map((capability) => (
-                <article className="capability-card" key={capability.number} data-reveal>
+              {capabilities.map((capability, index) => (
+                <article className={`capability-card capability-${index + 1}`} key={capability.number} data-reveal>
                   <span>{capability.number}</span>
                   <h3>{capability.title}</h3>
-                  <ul>
-                    {capability.items.map((item) => <li key={item}>{item}</li>)}
-                  </ul>
+                  <ul>{capability.items.map((item) => <li key={item}>{item}</li>)}</ul>
                 </article>
               ))}
             </div>
@@ -340,21 +338,22 @@ function App() {
         </section>
 
         <section className="contact shell" id="contact" data-reveal>
-          <div className="contact-kicker"><span /> Available for the right conversation</div>
-          <h2>Need someone who can hold<br />the plan <em>and</em> the room?</h2>
+          <p className="contact-kicker">Let&apos;s connect</p>
+          <h2>Need someone who can<br />hold the plan <em>and</em> the room?</h2>
           <div className="contact-bottom">
-            <p>Let&apos;s talk about ambitious Shopify delivery, strong client relationships, and growth that can be measured.</p>
+            <p>Let&apos;s talk about ambitious Shopify delivery, strong client relationships and growth that can be measured.</p>
             <div className="contact-actions">
-              <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <span aria-hidden="true">↗</span></a>
-              <a className="button button-outline" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
+              <a className="button button-paper" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
             </div>
           </div>
         </section>
       </main>
 
       <footer className="footer shell">
-        <p>© 2026 Taskeen Meher</p>
+        <a className="mark mark-small" href="#top" aria-label="Back to top"><span>TM</span></a>
         <p>Technical Project Manager · Shopify ecosystem</p>
+        <p>© 2026 Taskeen Meher</p>
         <a href="#top">Back to top ↑</a>
       </footer>
     </>
