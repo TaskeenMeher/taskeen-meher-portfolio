@@ -10,12 +10,15 @@ const experience = [
     role: "Technical Project Manager",
     period: "June 2025 to present",
     summary:
-      "I manage Shopify and Shopify Plus work from the first technical conversation through launch and ongoing growth.",
+      "I manage technical builds and growth retainers from the first client conversation through launch and ongoing optimisation.",
     points: [
-      "Own technical scoping, onboarding, solution planning, sprint delivery, QA, UAT and launch coordination.",
+      "Lead technical scoping, onboarding and solution architecture across pre-sales and delivery phases.",
       "Prioritise 15 to 20+ concurrent retainer tickets across enhancements, CRO initiatives and performance optimisation.",
-      "Coordinate developers, designers, QA, CRO and GA4 specialists while tracking financials, risks, KPIs and client decisions.",
-      "Maintain a 100% on-time and within-budget delivery record with zero escalations, including work for Kick Game and Drip Moda.",
+      "Run sprint planning, stand-ups, demos, QA and UAT while keeping scope, dependencies and decisions visible.",
+      "Coordinate developers, designers, QA, CRO and GA4 specialists to improve conversion, AOV and site performance.",
+      "Use AI tools to speed up SOW creation, requirement documentation and early risk analysis.",
+      "Track financials, risks and KPIs, strengthen client relationships and support retainer renewals.",
+      <>Maintain a 100% on-time and within-budget delivery record with zero escalations, including work for <strong>Kick Game</strong> and <strong>DripModa</strong>.</>,
     ],
     tags: ["Shopify Plus", "Technical scoping", "Retainers", "CRO"],
   },
@@ -25,12 +28,15 @@ const experience = [
     role: "Project Manager",
     period: "September 2024 to June 2025",
     summary:
-      "I led enterprise and B2B Shopify Plus delivery, with a focus on process control, client retention and site performance.",
+      "I led enterprise and B2B ecommerce delivery, with a focus on process control, client retention and site performance.",
     points: [
+      "Delivered Shopify Plus projects with strong timeline adherence and high client retention.",
       "Ran requirement gathering, scope documentation and risk mitigation to keep timelines stable and reduce change requests.",
       "Introduced SOPs, process tracking and automated performance monitoring to improve delivery consistency.",
+      "Improved website performance through structured optimisation initiatives and automated monitoring workflows.",
       "Contributed to a 2% CVR improvement and a 75% average lift in site speed scores through data-led prioritisation.",
-      "Maintained 4.5/5 average CSAT and a 5/5 KPI scorecard across Bestseller, Health & Glow, Pavers England, Baggit and Union Home B2B.",
+      "Maintained an average CSAT of 4.5/5 and achieved a 5/5 KPI scorecard.",
+      <>Managed enterprise and B2B accounts including <strong>Bestseller</strong> brands <strong>Jack & Jones</strong>, <strong>Vero Moda</strong> and <strong>ONLY</strong>, plus <strong>Health & Glow</strong>, <strong>Pavers England</strong>, <strong>Baggit</strong> and <strong>Union Home B2B</strong>.</>,
     ],
     tags: ["Enterprise", "SOPs", "Performance", "B2B"],
   },
@@ -43,9 +49,13 @@ const experience = [
       "I was the day-to-day client lead for a broad portfolio of high-growth ecommerce brands and Shopify B2B work.",
     points: [
       "Defined scopes, objectives and deliverables with stakeholders, then identified risks and put mitigation plans in place.",
-      "Led developers, designers and QA through delivery, ran design workshops and kept clients aligned on project decisions.",
-      "Maintained an average CSAT of 4.5/5 and consistently achieved a 5/5 KPI scorecard while identifying relevant upsell opportunities.",
-      "Managed accounts including boAt, Slurrp Farm, Enamor, Durex, Urban Monkey, Superkicks, FableStreet, Nasher Miles, Reise Moto and Power Gummies.",
+      "Coordinated developers, designers and QA teams to keep project delivery efficient and responsibilities clear.",
+      "Acted as the main point of contact for clients, handled day-to-day questions and maintained alignment with project goals.",
+      "Ran design workshops and used data to guide conversion and website speed improvements.",
+      "Maintained an average CSAT of 4.5/5 and consistently achieved a 5/5 KPI scorecard.",
+      "Identified relevant opportunities to extend accounts into other agency services.",
+      "Worked hands-on with Shopify B2B environments.",
+      <>Managed accounts including <strong>boAt</strong>, <strong>Slurrp Farm</strong>, <strong>Enamor</strong>, <strong>Durex</strong>, <strong>Urban Monkey</strong>, <strong>4700 BC</strong>, <strong>Superkicks</strong>, <strong>TBOF</strong>, <strong>FableStreet</strong>, <strong>Nasher Miles</strong>, <strong>Black Tulip</strong>, <strong>Rihaa</strong>, <strong>PinkFort</strong>, <strong>March Jewellery</strong>, <strong>Nestroots</strong>, <strong>Reise Moto</strong> and <strong>Power Gummies</strong>.</>,
     ],
     tags: ["Client leadership", "Risk", "Workshops", "Upsell"],
   },
@@ -55,11 +65,13 @@ const experience = [
     role: "Project Manager",
     period: "March 2022 to September 2022",
     summary:
-      "I helped shape the delivery process while managing both the Project and SSM teams.",
+      "I helped shape the operating process while managing two teams across project delivery and client support.",
     points: [
-      "Worked across the project lifecycle, from business planning and onboarding through issue resolution and task prioritisation.",
-      "Helped develop assembly-line procedures and removed team roadblocks, increasing delivery speed by 2x.",
-      "Supported start-ups with smoother onboarding and practical steps for scaling their business.",
+      "Contributed to business planning, strategy formulation and process development across the project lifecycle.",
+      "Helped formulate assembly-line procedures to improve consistency and operational efficiency.",
+      "Worked with cross-functional departments to resolve project issues and prioritise and assign tasks.",
+      "Created a smoother client onboarding experience and supported start-ups as they scaled their business.",
+      "Managed two teams with minimal roadblocks and increased project delivery speed by 2x.",
     ],
     tags: ["Team leadership", "Process", "Onboarding"],
   },
@@ -71,8 +83,10 @@ const experience = [
     summary:
       "My first commercial role built the client and growth foundation I now bring to project delivery.",
     points: [
-      "Created lead-generation and referral processes, scheduled product demonstrations and supported deal closure.",
-      "Structured sales plans, proposals and contracts that contributed to a 30% increase in sales.",
+      "Developed lead-generation processes and built a referral programme.",
+      "Handled cold outreach, scheduled product demonstrations and supported deal closure.",
+      "Structured sales strategies and drafted business proposals and contracts.",
+      "Contributed to a 30% increase in sales.",
     ],
     tags: ["Sales", "Growth", "Proposals"],
   },
@@ -93,7 +107,7 @@ const impact = [
     metric: "100%",
     metricLabel: "on time and within budget",
     title: "Wiro delivery record",
-    copy: "Delivered Shopify and Shopify Plus work on schedule and within budget, with zero escalations recorded in the resume period.",
+    copy: "Delivered technical builds and retainer work on schedule and within budget, with zero escalations recorded in the resume period.",
     tags: ["Delivery", "UAT", "Risk"],
     className: "impact-card-blue",
   },
@@ -101,8 +115,8 @@ const impact = [
     number: "03",
     metric: "2x",
     metricLabel: "faster project delivery",
-    title: "Project and SSM operations",
-    copy: "Managed Project and SSM teams, strengthened onboarding and removed operational blockers so work could move twice as fast.",
+    title: "Two-team delivery operations",
+    copy: "Managed two teams across project delivery and client support, improved onboarding and removed operational blockers so work could move twice as fast.",
     tags: ["Operations", "Teams", "Process"],
     className: "impact-card-coral",
   },
@@ -161,8 +175,32 @@ const capabilities = [
   },
 ];
 
+const brands = [
+  { name: "boAt", className: "brand-boat" },
+  { name: "Bestseller", className: "brand-bestseller" },
+  { name: "Health & Glow", className: "brand-health" },
+  { name: "Durex", className: "brand-durex" },
+  { name: "Urban Monkey", className: "brand-urban", sharkTank: true },
+  { name: "Nasher Miles", className: "brand-nasher", sharkTank: true },
+  { name: "Kick Game", className: "brand-kick" },
+  { name: "DripModa", className: "brand-drip" },
+];
+
 function Arrow() {
   return <span aria-hidden="true">↗</span>;
+}
+
+function BrandGroup({ hidden = false }: { hidden?: boolean }) {
+  return (
+    <div aria-hidden={hidden || undefined}>
+      {brands.map((brand) => (
+        <span className={`brand-logo ${brand.className}`} key={brand.name} aria-label={hidden ? undefined : brand.name}>
+          <b>{brand.name}</b>
+          {brand.sharkTank && <small>Shark Tank India</small>}
+        </span>
+      ))}
+    </div>
+  );
 }
 
 function App() {
@@ -223,8 +261,8 @@ function App() {
         <section className="hero shell" id="top">
           <div className="hero-pills" aria-label="Professional focus" data-parallax="0.012">
             <span className="pill pill-lilac">✦ Technical PM</span>
-            <span className="pill pill-yellow">◫ Shopify Plus</span>
-            <span className="pill pill-coral">↗ Ecommerce</span>
+            <span className="pill pill-yellow">◫ Digital delivery</span>
+            <span className="pill pill-coral">↗ Operations &amp; growth</span>
             <span className="pill pill-blue">⌁ Bangalore</span>
           </div>
 
@@ -232,9 +270,9 @@ function App() {
             <div className="hero-copy-block" data-parallax="0.018">
               <p className="hero-kicker">Hello, I&apos;m</p>
               <h1><span>Taskeen</span><span>Meher</span></h1>
-              <h2>Technical Project Manager<br />in the Shopify ecosystem.</h2>
+              <h2>Technical Project Manager<br />for digital delivery and growth.</h2>
               <p className="hero-intro">
-                I manage Shopify and Shopify Plus projects from technical scoping through launch and ongoing growth. I keep delivery clear for clients, developers, designers, QA, CRO and GA4 teams.
+                I turn complex requirements into practical delivery plans, aligned cross-functional teams and clear outcomes. My experience covers one-time builds, ongoing programmes, process improvement, client growth and performance-led ecommerce work.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#impact">See my impact <span aria-hidden="true">↓</span></a>
@@ -248,10 +286,6 @@ function App() {
               <div className="portrait-image-wrap">
                 <img src={`${base}taskeen-meher.jpg`} alt="Taskeen Meher, Technical Project Manager" />
               </div>
-              <figcaption>
-                <span className="status-dot" />
-                Wiro, Shopify Premier Partner
-              </figcaption>
             </figure>
           </div>
 
@@ -265,31 +299,28 @@ function App() {
 
         <section className="ticker" aria-label="Selected brand experience">
           <div className="ticker-track">
-            <div>
-              <span>boAt</span><i>✦</i><span>Bestseller</span><i>✦</i><span>Health &amp; Glow</span><i>✦</i><span>Pavers England</span><i>✦</i><span>Durex</span><i>✦</i><span>Superkicks</span><i>✦</i><span>Kickgame</span><i>✦</i><span>Drip Moda</span><i>✦</i>
-            </div>
-            <div aria-hidden="true">
-              <span>boAt</span><i>✦</i><span>Bestseller</span><i>✦</i><span>Health &amp; Glow</span><i>✦</i><span>Pavers England</span><i>✦</i><span>Durex</span><i>✦</i><span>Superkicks</span><i>✦</i><span>Kickgame</span><i>✦</i><span>Drip Moda</span><i>✦</i>
-            </div>
+            <BrandGroup />
+            <BrandGroup hidden />
           </div>
         </section>
 
         <section className="section profile shell" id="about">
           <div className="section-head" data-reveal>
             <p>01 / Profile</p>
-            <span>Scope, delivery and growth</span>
+            <span>Transferable project leadership</span>
           </div>
           <div className="profile-grid">
             <div className="profile-title" data-reveal>
-              <h2>Shopify delivery,<br />from brief to<br /><em>ongoing growth.</em></h2>
+              <h2>From business brief<br />to reliable<br /><em>delivery.</em></h2>
             </div>
             <div className="profile-copy" data-reveal>
-              <p className="lead">I work where merchant goals, technical delivery and client expectations meet.</p>
-              <p>I turn business requests into workable scope, give each specialist the context they need, and keep clients informed before a risk becomes an escalation. My experience covers technical discovery, solution planning, sprints, QA, UAT, Shopify B2B, retainers, CRO and performance optimisation.</p>
+              <p className="lead">I work where business goals, technical delivery and stakeholder expectations meet.</p>
+              <p>Agency work has made Shopify and Shopify Plus a strong part of my technical background, but the core of my role is broader. I shape requirements, plan the approach with developers and designers, manage scope and risk, and keep stakeholders informed. On one-time builds, I help brainstorm the technical stack and delivery plan before work begins. On ongoing programmes, I manage priorities, performance improvements and client growth.</p>
               <div className="profile-principles">
                 <span>Scope and onboarding</span>
                 <span>Sprints, QA and UAT</span>
                 <span>Retainers, CRO and growth</span>
+                <span>One-time builds and tech planning</span>
               </div>
             </div>
           </div>
@@ -329,8 +360,8 @@ function App() {
           <div className="experience-layout">
             <div className="experience-intro" data-reveal>
               <span className="mini-label">Professional experience</span>
-              <h2>Shopify delivery,<br /><em>in detail.</em></h2>
-              <p>Company names lead each entry. The responsibilities, results and brand experience below come from my resume.</p>
+              <h2>Delivery,<br />operations and<br /><em>growth.</em></h2>
+              <p>My experience spans technical project management, client services, process improvement and business development. Each role strengthened how I plan work, lead teams and deliver commercial results.</p>
             </div>
 
             <div className="timeline">
@@ -350,7 +381,7 @@ function App() {
                     </div>
                     <p className="timeline-summary">{item.summary}</p>
                     <ul className="timeline-points">
-                      {item.points.map((point) => <li key={point}>{point}</li>)}
+                      {item.points.map((point, pointIndex) => <li key={`${item.company}-${pointIndex}`}>{point}</li>)}
                     </ul>
                     <div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                   </div>
@@ -395,7 +426,7 @@ function App() {
             </div>
             <div className="capabilities-heading" data-reveal>
               <h2>Skills I use<br />to run the <em>work.</em></h2>
-              <p>A practical mix of project control, Shopify knowledge, performance thinking and client management.</p>
+              <p>A practical mix of project control, platform knowledge, performance thinking and client management.</p>
             </div>
             <div className="capability-grid">
               {capabilities.map((capability, index) => (
@@ -421,7 +452,15 @@ function App() {
               <div>
                 <p className="education-kicker">Certification</p>
                 <h3>Google Project Management</h3>
-                <p>Digital Certificate Program · 2021</p>
+                <p>Coursera Digital Certificate Program · 2021</p>
+                <ul className="certification-list">
+                  <li>Foundations of Project Management</li>
+                  <li>Project Initiation: Starting a Successful Project</li>
+                  <li>Project Planning: Putting It All Together</li>
+                  <li>Project Execution: Running the Project</li>
+                  <li>Agile Project Management</li>
+                  <li>Capstone: Applying Project Management in the Real World</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -429,9 +468,9 @@ function App() {
 
         <section className="contact shell" id="contact" data-reveal>
           <p className="contact-kicker">Let&apos;s connect</p>
-          <h2>Have a Shopify project<br />management role <em>in mind?</em></h2>
+          <h2>Have a complex project<br />that needs <em>clear ownership?</em></h2>
           <div className="contact-bottom">
-            <p>I&apos;d be glad to discuss Shopify delivery, technical project management, client relationships and ecommerce growth.</p>
+            <p>I&apos;d be glad to discuss technical project management, digital delivery, operations, client programmes and growth roles across industries.</p>
             <div className="contact-actions">
               <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
               <a className="button button-paper" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
@@ -442,7 +481,7 @@ function App() {
 
       <footer className="footer shell">
         <a className="mark mark-small" href="#top" aria-label="Back to top"><span>TM</span></a>
-        <p>Technical Project Manager · Shopify ecosystem</p>
+        <p>Technical Project Manager · Digital delivery and growth</p>
         <p>© 2026 Taskeen Meher</p>
         <a href="#top">Back to top ↑</a>
       </footer>
