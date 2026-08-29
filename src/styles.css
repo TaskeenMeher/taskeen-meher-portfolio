@@ -185,17 +185,30 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .case-heading h2 { margin: 0; font-family: "Archivo Black", sans-serif; font-size: clamp(3.5rem, 6.3vw, 6.5rem); font-weight: 400; line-height: .87; letter-spacing: -.065em; text-transform: uppercase; }
 .case-heading h2 em { color: #746576; }
 .case-heading > p { max-width: 440px; margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.75; }
-.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 2px solid var(--line); box-shadow: 6px 6px 0 var(--ink); }
-.case-card { min-height: 430px; display: flex; flex-direction: column; padding: 25px; background: var(--white); }
-.case-card + .case-card { border-left: 2px solid var(--line); }
+.case-grid { display: grid; gap: 30px; }
+.case-card { padding: clamp(28px, 4vw, 50px); border: 2px solid var(--line); background: var(--white); box-shadow: 6px 6px 0 var(--ink); }
 .case-card:nth-child(2) { background: var(--blue); }
-.case-card:nth-child(3) { background: #e9e0d4; }
-.case-top { display: flex; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid rgba(41,35,31,.55); color: var(--muted); text-transform: uppercase; letter-spacing: .09em; font-size: .5rem; }
-.case-card > p { margin: 70px 0 9px; color: #865f51; text-transform: uppercase; letter-spacing: .09em; font-size: .54rem; font-weight: 700; }
-.case-card h3 { margin: 0; font-family: "Instrument Serif", Georgia, serif; font-size: 2.55rem; font-weight: 400; line-height: 1; }
-.case-fields { display: grid; margin-top: 27px; border-top: 1px solid rgba(41,35,31,.45); }
-.case-fields span { padding: 9px 0; border-bottom: 1px solid rgba(41,35,31,.35); color: #5f5750; font-size: .67rem; }
-.case-card > small { margin-top: auto; color: var(--muted); font-size: .56rem; }
+.case-top { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(41,35,31,.55); color: var(--muted); text-transform: uppercase; letter-spacing: .09em; font-size: .53rem; font-weight: 700; }
+.case-main { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(44px, 7vw, 96px); align-items: end; margin-top: 42px; }
+.case-type { margin: 0 0 10px; color: #865f51; text-transform: uppercase; letter-spacing: .09em; font-size: .58rem; font-weight: 700; }
+.case-story h3 { max-width: 720px; margin: 0; font-family: "Instrument Serif", Georgia, serif; font-size: clamp(2.7rem, 4.7vw, 4.8rem); font-weight: 400; line-height: .95; letter-spacing: -.025em; }
+.case-story > p:last-child { max-width: 690px; margin: 24px 0 0; color: #544c46; font-size: .84rem; line-height: 1.7; }
+.case-role { padding-left: 28px; border-left: 1px solid rgba(41,35,31,.45); }
+.case-role > p { margin: 0 0 15px; text-transform: uppercase; letter-spacing: .09em; font-size: .57rem; font-weight: 700; }
+.case-role ul { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+.case-role li { position: relative; padding-left: 15px; color: #544c46; font-size: .73rem; line-height: 1.55; }
+.case-role li::before { content: ""; position: absolute; top: .62em; left: 0; width: 5px; height: 5px; border-radius: 50%; background: #8b6658; }
+.case-metrics { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 42px; border-block: 1px solid rgba(41,35,31,.55); }
+.case-metric { min-height: 148px; display: flex; flex-direction: column; justify-content: center; padding: 20px 22px; border-left: 1px solid rgba(41,35,31,.45); }
+.case-metric:first-child { border-left: 0; }
+.case-metric strong { font-family: "Archivo Black", sans-serif; font-size: clamp(2.15rem, 3.6vw, 3.7rem); font-weight: 400; line-height: .9; letter-spacing: -.065em; }
+.case-metric span { margin-top: 13px; text-transform: uppercase; letter-spacing: .07em; font-size: .55rem; font-weight: 700; }
+.case-metric small { margin-top: 5px; color: var(--muted); font-size: .61rem; }
+.case-bottom { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; margin-top: 28px; }
+.case-bottom > p { max-width: 760px; margin: 0; color: #544c46; font-size: .75rem; line-height: 1.65; }
+.case-tags { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 6px; }
+.case-tags span { padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.38); text-transform: uppercase; letter-spacing: .05em; font-size: .5rem; font-weight: 700; }
+.case-source { display: block; margin-top: 10px; color: var(--muted); text-align: right; font-size: .52rem; }
 
 .capabilities { border-block: 2px solid var(--line); background: #eae2d6; }
 .capabilities-heading { display: flex; justify-content: space-between; align-items: end; gap: 60px; margin: 70px 0 60px; }
@@ -248,7 +261,9 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .hero-portrait figcaption { right: -4px; }
   .profile-grid { grid-template-columns: 1fr .75fr; gap: 60px; }
   .experience-layout { grid-template-columns: .8fr 1.2fr; gap: 60px; }
-  .case-card { padding: 21px; }
+  .case-card { padding: 30px; }
+  .case-main { grid-template-columns: 1fr; gap: 32px; }
+  .case-role { padding: 24px 0 0; border-top: 1px solid rgba(41,35,31,.45); border-left: 0; }
   .capability-grid { grid-template-columns: 1fr 1fr; }
   .capability-card { border-bottom: 2px solid var(--line); }
   .capability-card:nth-child(odd) { border-left: 0; }
@@ -279,6 +294,7 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .section-head { align-items: flex-start; }
   .section-head span { text-align: right; }
   .profile-grid, .experience-layout { grid-template-columns: 1fr; gap: 48px; margin-top: 52px; }
+  .experience-layout > *, .timeline-content { min-width: 0; }
   .profile h2, .impact-heading h2, .experience-intro h2, .capabilities-heading h2, .contact h2 { font-size: clamp(3.25rem, 16vw, 5rem); }
   .profile-copy .lead { font-size: 2rem; }
   .impact-heading, .case-heading, .capabilities-heading { display: grid; gap: 32px; margin: 52px 0 44px; }
@@ -289,9 +305,18 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .timeline-top { display: grid; gap: 10px; }
   .case-studies { padding-top: 0; }
   .case-heading h2 { font-size: clamp(3.25rem, 16vw, 5rem); }
-  .case-grid { grid-template-columns: 1fr; }
-  .case-card { min-height: 380px; }
-  .case-card + .case-card { border-top: 2px solid var(--line); border-left: 0; }
+  .case-card { padding: 24px; }
+  .case-top { display: grid; gap: 8px; }
+  .case-top span:last-child { text-align: left; }
+  .case-main { margin-top: 32px; }
+  .case-story h3 { font-size: clamp(2.55rem, 13vw, 3.6rem); }
+  .case-metrics { grid-template-columns: 1fr 1fr; }
+  .case-metric { min-height: 126px; border-top: 1px solid rgba(41,35,31,.45); }
+  .case-metric:nth-child(odd) { border-left: 0; }
+  .case-metric:nth-child(-n+2) { border-top: 0; }
+  .case-bottom { grid-template-columns: 1fr; gap: 24px; }
+  .case-tags { justify-content: flex-start; }
+  .case-source { text-align: left; }
   .capability-grid { grid-template-columns: 1fr; }
   .capability-card, .capability-card:nth-child(odd), .capability-card:nth-child(n+3) { min-height: 310px; border-left: 0; border-bottom: 2px solid var(--line); }
   .capability-card:last-child { border-bottom: 0; }

@@ -131,24 +131,54 @@ const impact = [
   },
 ];
 
-const caseStudySlots = [
+const caseStudies = [
   {
     number: "01",
-    type: "Shopify Plus delivery",
-    title: "Build or migration",
-    fields: ["Business context", "My responsibility", "Delivery decisions", "Launch result"],
+    client: "Kick Game",
+    type: "Relaunch and ongoing growth",
+    period: "Three-month pre/post review",
+    source: "Performance review · 8 July 2026",
+    title: "Improving conversion while acquisition changed around the business.",
+    intro:
+      "The relaunch went live as Kick Game faced a sharp drop in acquisition after losing exclusivity on a major product range. My focus was to keep the build and retainer moving while the team improved the experience for the traffic that remained.",
+    responsibilities: [
+      "Technical scoping, sprint planning and launch coordination",
+      "Developer, design, QA, CRO and data-team alignment",
+      "UAT, risk tracking, client decisions and the post-launch backlog",
+    ],
+    metrics: [
+      { value: "+213%", label: "Conversion rate", detail: "0.29% to 0.91%" },
+      { value: "+4.5%", label: "Purchases", detail: "4,288 to 4,479" },
+      { value: "−18.8%", label: "Bounce rate", detail: "60.25% to 48.91%" },
+      { value: "+77%", label: "Flow efficiency", detail: "Revenue per recipient" },
+    ],
+    context:
+      "The review also records sessions down 66.4% and revenue down 14.8%, driven by acquisition, assortment and budget pressure. The useful result was a site that converted the available demand far more efficiently.",
+    tags: ["Delivery", "CRO", "GA4", "Klaviyo"],
   },
   {
     number: "02",
-    type: "CRO and performance",
-    title: "Growth programme",
-    fields: ["Performance baseline", "Prioritisation", "Team coordination", "Measured result"],
-  },
-  {
-    number: "03",
-    type: "Ongoing account growth",
-    title: "Retainer programme",
-    fields: ["Merchant goal", "Backlog approach", "Client cadence", "Commercial result"],
+    client: "DripModa",
+    type: "Platform rebuild and CRO",
+    period: "Matched 90-day windows",
+    source: "Performance review · 7 July 2026",
+    title: "Rebuilding a high-volume mobile journey around discovery and conversion.",
+    intro:
+      "The previous store carried a heavy app stack, duplicate tracking, 13MB-plus product pages and bundle issues. The programme rebuilt the experience on a more maintainable foundation and concentrated delivery around mobile discovery, product confidence and checkout.",
+    responsibilities: [
+      "Coordinated a modular, GitHub-based rebuild and leaner app stack",
+      "Aligned navigation, search, PDP, cart and bundle work across teams",
+      "Managed launch, retainer priorities and CRO testing handoffs",
+    ],
+    metrics: [
+      { value: "+34%", label: "Add-to-cart rate", detail: "5.97% to 8.01%" },
+      { value: "+4.7pt", label: "Checkout completion", detail: "51.9% to 56.6%" },
+      { value: "+28%", label: "Mobile conversion", detail: "1.65% to 2.12%" },
+      { value: "+76%", label: "Search usage", detail: "5.1% to 9.0%" },
+    ],
+    context:
+      "The report estimates that the checkout-completion improvement represented roughly 1,350 additional completed orders, worth about £125K, across the review period. Flow revenue also grew 156% alongside the rebuild and retainer programme.",
+    tags: ["Rebuild", "Mobile", "Search", "Experimentation"],
   },
 ];
 
@@ -409,25 +439,51 @@ function App() {
         <section className="section case-studies shell" id="case-studies">
           <div className="section-head" data-reveal>
             <p>04 / Case studies</p>
-            <span>Structure ready for Wiro work</span>
+            <span>Measured delivery outcomes</span>
           </div>
           <div className="case-heading" data-reveal>
             <div>
-              <span className="mini-label">Next content update</span>
-              <h2>Space for the work<br />behind the <em>results.</em></h2>
+              <span className="mini-label">Recent client work</span>
+              <h2>Project stories,<br />backed by <em>evidence.</em></h2>
             </div>
-            <p>These are the three case-study formats prepared for the Wiro material you are sending. The final portfolio will show the real project brief, your decisions, the delivery process and approved outcomes.</p>
+            <p>A closer look at two recent delivery programmes: what changed, what I coordinated and how the outcomes were measured.</p>
           </div>
           <div className="case-grid">
-            {caseStudySlots.map((study) => (
+            {caseStudies.map((study) => (
               <article className="case-card" key={study.number} data-reveal>
-                <div className="case-top"><span>{study.number}</span><span>Content reserved</span></div>
-                <p>{study.type}</p>
-                <h3>{study.title}</h3>
-                <div className="case-fields">
-                  {study.fields.map((field) => <span key={field}>{field}</span>)}
+                <div className="case-top">
+                  <span>{study.number} / {study.client}</span>
+                  <span>{study.period}</span>
                 </div>
-                <small>Ready for your source material</small>
+                <div className="case-main">
+                  <div className="case-story">
+                    <p className="case-type">{study.type}</p>
+                    <h3>{study.title}</h3>
+                    <p>{study.intro}</p>
+                  </div>
+                  <div className="case-role">
+                    <p>My delivery scope</p>
+                    <ul>
+                      {study.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}
+                    </ul>
+                  </div>
+                </div>
+                <div className="case-metrics" aria-label={`${study.client} measured outcomes`}>
+                  {study.metrics.map((metric) => (
+                    <div className="case-metric" key={metric.label}>
+                      <strong>{metric.value}</strong>
+                      <span>{metric.label}</span>
+                      <small>{metric.detail}</small>
+                    </div>
+                  ))}
+                </div>
+                <div className="case-bottom">
+                  <p>{study.context}</p>
+                  <div>
+                    <div className="case-tags">{study.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                    <small className="case-source">{study.source}</small>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
