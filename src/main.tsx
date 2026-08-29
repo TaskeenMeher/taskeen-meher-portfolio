@@ -182,6 +182,14 @@ const brands = [
   { name: "Durex", className: "brand-durex" },
   { name: "Urban Monkey", className: "brand-urban", sharkTank: true },
   { name: "Nasher Miles", className: "brand-nasher", sharkTank: true },
+  { name: "Enamor", className: "brand-enamor" },
+  { name: "TBOF", className: "brand-tbof" },
+  { name: "Superkicks", className: "brand-superkicks" },
+  { name: "Pavers England", className: "brand-pavers" },
+  { name: "Slurrp Farm", className: "brand-slurrp" },
+  { name: "FableStreet", className: "brand-fable" },
+  { name: "YAGI", className: "brand-yagi" },
+  { name: "Revitive", className: "brand-revitive" },
   { name: "Kick Game", className: "brand-kick" },
   { name: "DripModa", className: "brand-drip" },
 ];
@@ -193,11 +201,18 @@ function Arrow() {
 function BrandGroup({ hidden = false }: { hidden?: boolean }) {
   return (
     <div aria-hidden={hidden || undefined}>
-      {brands.map((brand) => (
-        <span className={`brand-logo ${brand.className}`} key={brand.name} aria-label={hidden ? undefined : brand.name}>
-          <b>{brand.name}</b>
-          {brand.sharkTank && <small>Shark Tank India</small>}
-        </span>
+      {[0, 1].map((cycle) => (
+        brands.map((brand) => (
+          <span
+            className={`brand-logo ${brand.className}`}
+            key={`${cycle}-${brand.name}`}
+            aria-hidden={hidden || cycle > 0 || undefined}
+            aria-label={!hidden && cycle === 0 ? brand.name : undefined}
+          >
+            <b>{brand.name}</b>
+            {brand.sharkTank && <small>Shark Tank India</small>}
+          </span>
+        ))
       ))}
     </div>
   );

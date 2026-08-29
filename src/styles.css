@@ -85,7 +85,7 @@ img { display: block; max-width: 100%; }
 .proof span { max-width: 150px; font-size: .7rem; line-height: 1.35; }
 
 .ticker { overflow: hidden; padding: 13px 0; border-block: 2px solid var(--line); background: var(--ink); color: var(--white); }
-.ticker-track { display: flex; width: max-content; animation: ticker 30s linear infinite; }
+.ticker-track { display: flex; width: max-content; animation: ticker 105s linear infinite; }
 .ticker-track > div { display: flex; align-items: center; gap: 13px; padding-right: 13px; white-space: nowrap; }
 .brand-logo { min-width: 150px; min-height: 58px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 7px 18px; border: 1px solid #615851; color: var(--ink); background: var(--white); font-style: normal; }
 .brand-logo b { font-size: 1rem; line-height: 1; }
@@ -100,6 +100,19 @@ img { display: block; max-width: 100%; }
 .brand-urban small { color: #d7c992; }
 .brand-nasher { min-width: 205px; background: var(--yellow); }
 .brand-nasher b { text-transform: lowercase; letter-spacing: -.04em; }
+.brand-enamor b { font-family: "Instrument Serif", Georgia, serif; font-size: 1.3rem; font-weight: 400; }
+.brand-tbof { background: var(--coral); }
+.brand-tbof b { font-family: "Archivo Black", sans-serif; letter-spacing: .05em; }
+.brand-superkicks b { text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; }
+.brand-pavers { min-width: 190px; background: var(--lilac); }
+.brand-pavers b { letter-spacing: .04em; }
+.brand-slurrp { min-width: 175px; background: var(--yellow); }
+.brand-slurrp b { font-weight: 700; letter-spacing: -.04em; }
+.brand-fable b { font-family: "Instrument Serif", Georgia, serif; font-size: 1.25rem; font-weight: 400; }
+.brand-yagi { background: var(--blue); }
+.brand-yagi b { font-family: "Archivo Black", sans-serif; letter-spacing: .18em; }
+.brand-revitive { min-width: 175px; color: white; background: #49778b; }
+.brand-revitive b { text-transform: lowercase; letter-spacing: -.03em; font-size: 1.15rem; }
 .brand-kick b { text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; }
 .brand-drip b { font-family: "Instrument Serif", Georgia, serif; font-size: 1.35rem; font-weight: 400; font-style: italic; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
@@ -127,22 +140,22 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .impact-heading h2 em { color: var(--yellow); }
 .impact-heading > p { max-width: 390px; margin: 0; color: #b9afa8; line-height: 1.7; }
 .impact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.impact-card { min-height: 510px; padding: clamp(26px, 4vw, 44px); border: 2px solid var(--line); color: var(--ink); display: flex; flex-direction: column; box-shadow: 6px 6px 0 #766a63; transition: transform .25s ease, box-shadow .25s ease; }
+.impact-card { min-height: 390px; padding: clamp(24px, 3vw, 34px); border: 2px solid var(--line); color: var(--ink); display: flex; flex-direction: column; box-shadow: 6px 6px 0 #766a63; transition: transform .25s ease, box-shadow .25s ease; }
 .impact-card:hover { transform: translate(-2px, -2px) rotate(-.18deg); box-shadow: 8px 8px 0 #766a63; }
 .impact-card-lilac { background: var(--lilac); }
 .impact-card-blue { background: var(--blue); }
 .impact-card-coral { background: var(--coral); }
 .impact-card-yellow { background: var(--yellow); }
 .impact-topline { display: flex; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid rgba(41,35,31,.65); text-transform: uppercase; letter-spacing: .1em; font-size: .59rem; font-weight: 700; }
-.impact-metric { display: grid; margin-top: 36px; }
-.impact-metric strong { font-family: "Archivo Black", sans-serif; font-size: clamp(4.8rem, 9vw, 8.2rem); font-weight: 400; line-height: .85; letter-spacing: -.075em; }
-.impact-card:last-child .impact-metric strong { font-size: clamp(3.1rem, 6.2vw, 5.8rem); }
-.impact-metric span { margin-top: 10px; text-transform: uppercase; letter-spacing: .08em; font-size: .64rem; font-weight: 700; }
-.impact-copy { margin-top: auto; padding-top: 50px; }
+.impact-metric { display: grid; margin-top: 26px; }
+.impact-metric strong { font-family: "Archivo Black", sans-serif; font-size: clamp(4rem, 6.8vw, 6.4rem); font-weight: 400; line-height: .85; letter-spacing: -.075em; }
+.impact-card:last-child .impact-metric strong { font-size: clamp(2.8rem, 4.8vw, 4.6rem); }
+.impact-metric span { margin-top: 8px; text-transform: uppercase; letter-spacing: .08em; font-size: .62rem; font-weight: 700; }
+.impact-copy { margin-top: auto; padding-top: 30px; }
 .impact-copy h3 { margin: 0 0 12px; font-size: 1.3rem; line-height: 1.1; }
 .impact-copy p { max-width: 530px; margin: 0; color: #544943; font-size: .85rem; line-height: 1.65; }
-.impact-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 24px; }
-.impact-tags span { padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.28); text-transform: uppercase; letter-spacing: .05em; font-size: .55rem; font-weight: 700; }
+.impact-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.impact-tags span { padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.28); text-transform: uppercase; letter-spacing: .05em; font-size: .53rem; font-weight: 700; }
 
 .experience-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: clamp(70px, 10vw, 140px); align-items: start; margin-top: 74px; }
 .experience-intro { position: sticky; top: 44px; }
@@ -270,7 +283,7 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .profile-copy .lead { font-size: 2rem; }
   .impact-heading, .case-heading, .capabilities-heading { display: grid; gap: 32px; margin: 52px 0 44px; }
   .impact-grid { grid-template-columns: 1fr; }
-  .impact-card { min-height: 450px; }
+  .impact-card { min-height: 390px; }
   .experience-intro { position: static; }
   .timeline-item { grid-template-columns: 34px 1fr; }
   .timeline-top { display: grid; gap: 10px; }
