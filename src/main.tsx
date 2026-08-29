@@ -6,42 +6,74 @@ import { setupParallax } from "./parallax";
 const experience = [
   {
     company: "Wiro",
+    partner: "Shopify Premier Partner",
     role: "Technical Project Manager",
-    period: "Jun 2025 — Present",
+    period: "June 2025 to present",
     summary:
-      "Leading end-to-end Shopify and Shopify Plus delivery across technical scoping, solution planning, agile execution, UAT, and retainer growth.",
+      "I manage Shopify and Shopify Plus work from the first technical conversation through launch and ongoing growth.",
+    points: [
+      "Own technical scoping, onboarding, solution planning, sprint delivery, QA, UAT and launch coordination.",
+      "Prioritise 15 to 20+ concurrent retainer tickets across enhancements, CRO initiatives and performance optimisation.",
+      "Coordinate developers, designers, QA, CRO and GA4 specialists while tracking financials, risks, KPIs and client decisions.",
+      "Maintain a 100% on-time and within-budget delivery record with zero escalations, including work for Kick Game and Drip Moda.",
+    ],
     tags: ["Shopify Plus", "Technical scoping", "Retainers", "CRO"],
   },
   {
     company: "Tenovia",
+    partner: "Shopify Plus agency",
     role: "Project Manager",
-    period: "Sep 2024 — Jun 2025",
+    period: "September 2024 to June 2025",
     summary:
-      "Delivered enterprise Shopify Plus programs, introduced stronger delivery systems, and drove measurable conversion and site-speed gains.",
+      "I led enterprise and B2B Shopify Plus delivery, with a focus on process control, client retention and site performance.",
+    points: [
+      "Ran requirement gathering, scope documentation and risk mitigation to keep timelines stable and reduce change requests.",
+      "Introduced SOPs, process tracking and automated performance monitoring to improve delivery consistency.",
+      "Contributed to a 2% CVR improvement and a 75% average lift in site speed scores through data-led prioritisation.",
+      "Maintained 4.5/5 average CSAT and a 5/5 KPI scorecard across Bestseller, Health & Glow, Pavers England, Baggit and Union Home B2B.",
+    ],
     tags: ["Enterprise", "SOPs", "Performance", "B2B"],
   },
   {
     company: "Marmeto",
+    partner: "Shopify Platinum Partner",
     role: "Project Manager",
-    period: "Oct 2022 — Aug 2024",
+    period: "October 2022 to August 2024",
     summary:
-      "Owned scope, delivery, risk, design workshops, and client relationships for a broad portfolio of high-growth ecommerce brands.",
+      "I was the day-to-day client lead for a broad portfolio of high-growth ecommerce brands and Shopify B2B work.",
+    points: [
+      "Defined scopes, objectives and deliverables with stakeholders, then identified risks and put mitigation plans in place.",
+      "Led developers, designers and QA through delivery, ran design workshops and kept clients aligned on project decisions.",
+      "Maintained an average CSAT of 4.5/5 and consistently achieved a 5/5 KPI scorecard while identifying relevant upsell opportunities.",
+      "Managed accounts including boAt, Slurrp Farm, Enamor, Durex, Urban Monkey, Superkicks, FableStreet, Nasher Miles, Reise Moto and Power Gummies.",
+    ],
     tags: ["Client leadership", "Risk", "Workshops", "Upsell"],
   },
   {
     company: "Growth99",
+    partner: "Health-tech growth platform",
     role: "Project Manager",
-    period: "Mar 2022 — Sep 2022",
+    period: "March 2022 to September 2022",
     summary:
-      "Managed Project and SSM teams, improved onboarding, and helped double delivery speed by reducing operational roadblocks.",
+      "I helped shape the delivery process while managing both the Project and SSM teams.",
+    points: [
+      "Worked across the project lifecycle, from business planning and onboarding through issue resolution and task prioritisation.",
+      "Helped develop assembly-line procedures and removed team roadblocks, increasing delivery speed by 2x.",
+      "Supported start-ups with smoother onboarding and practical steps for scaling their business.",
+    ],
     tags: ["Team leadership", "Process", "Onboarding"],
   },
   {
     company: "QuickMove Technologies",
+    partner: "Business technology services",
     role: "Business Development Executive",
-    period: "May 2021 — Feb 2022",
+    period: "May 2021 to February 2022",
     summary:
-      "Built lead-generation processes and referral programs, developed sales strategy, and contributed to 30% sales growth.",
+      "My first commercial role built the client and growth foundation I now bring to project delivery.",
+    points: [
+      "Created lead-generation and referral processes, scheduled product demonstrations and supported deal closure.",
+      "Structured sales plans, proposals and contracts that contributed to a 30% increase in sales.",
+    ],
     tags: ["Sales", "Growth", "Proposals"],
   },
 ];
@@ -50,38 +82,59 @@ const impact = [
   {
     number: "01",
     metric: "+2%",
-    metricLabel: "conversion-rate impact",
-    title: "Performance-led delivery",
-    copy: "Turned optimisation priorities into a controlled Shopify Plus delivery plan—improving conversion while lifting average site-speed scores by 75%.",
+    metricLabel: "conversion rate improvement",
+    title: "CRO and site performance",
+    copy: "Used performance data to prioritise Shopify Plus improvements that increased CVR by 2% and lifted average site speed scores by 75%.",
     tags: ["Shopify Plus", "CRO", "Performance"],
     className: "impact-card-lilac",
   },
   {
     number: "02",
     metric: "100%",
-    metricLabel: "on time & within budget",
-    title: "Control without friction",
-    copy: "Delivered end-to-end Shopify work with zero escalations through clear scoping, agile rituals and proactive risk management.",
+    metricLabel: "on time and within budget",
+    title: "Wiro delivery record",
+    copy: "Delivered Shopify and Shopify Plus work on schedule and within budget, with zero escalations recorded in the resume period.",
     tags: ["Delivery", "UAT", "Risk"],
     className: "impact-card-blue",
   },
   {
     number: "03",
-    metric: "2×",
-    metricLabel: "faster team delivery",
-    title: "Less drag. More flow.",
+    metric: "2x",
+    metricLabel: "faster project delivery",
+    title: "Project and SSM operations",
     copy: "Managed Project and SSM teams, strengthened onboarding and removed operational blockers so work could move twice as fast.",
     tags: ["Operations", "Teams", "Process"],
     className: "impact-card-coral",
   },
   {
     number: "04",
-    metric: "15–20+",
-    metricLabel: "tickets in motion",
-    title: "Momentum after launch",
+    metric: "15 to 20+",
+    metricLabel: "concurrent retainer tickets",
+    title: "Retainer backlog management",
     copy: "Balanced enhancements, CRO initiatives and technical work across high-volume retainer backlogs without losing sight of merchant goals.",
     tags: ["Retainers", "Prioritisation", "Growth"],
     className: "impact-card-yellow",
+  },
+];
+
+const caseStudySlots = [
+  {
+    number: "01",
+    type: "Shopify Plus delivery",
+    title: "Build or migration",
+    fields: ["Business context", "My responsibility", "Delivery decisions", "Launch result"],
+  },
+  {
+    number: "02",
+    type: "CRO and performance",
+    title: "Growth programme",
+    fields: ["Performance baseline", "Prioritisation", "Team coordination", "Measured result"],
+  },
+  {
+    number: "03",
+    type: "Ongoing account growth",
+    title: "Retainer programme",
+    fields: ["Merchant goal", "Backlog approach", "Client cadence", "Commercial result"],
   },
 ];
 
@@ -159,6 +212,7 @@ function App() {
           <div className="nav-center">
             <a href="#impact">Impact</a>
             <a href="#experience">Experience</a>
+            <a href="#case-studies">Case studies</a>
             <a href="#capabilities">Capabilities</a>
           </div>
           <a className="nav-cta" href="mailto:taskeenmeher13@gmail.com">Get in touch <Arrow /></a>
@@ -180,7 +234,7 @@ function App() {
               <h1><span>Taskeen</span><span>Meher</span></h1>
               <h2>Technical Project Manager<br />in the Shopify ecosystem.</h2>
               <p className="hero-intro">
-                I turn complex ecommerce builds into clear plans, aligned teams and measurable launches—without the delivery drama.
+                I manage Shopify and Shopify Plus projects from technical scoping through launch and ongoing growth. I keep delivery clear for clients, developers, designers, QA, CRO and GA4 teams.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#impact">See my impact <span aria-hidden="true">↓</span></a>
@@ -196,16 +250,16 @@ function App() {
               </div>
               <figcaption>
                 <span className="status-dot" />
-                Open to the right opportunity
+                Wiro, Shopify Premier Partner
               </figcaption>
             </figure>
           </div>
 
           <div className="proof" aria-label="Career highlights" data-parallax="0.01">
-            <div className="proof-lilac"><strong>4+</strong><span>years leading digital delivery</span></div>
-            <div className="proof-blue"><strong>100%</strong><span>on-time delivery at Wiro</span></div>
+            <div className="proof-lilac"><strong>4+</strong><span>years in agency project delivery</span></div>
+            <div className="proof-blue"><strong>100%</strong><span>on time and within budget at Wiro</span></div>
             <div className="proof-coral"><strong>4.5/5</strong><span>average client satisfaction</span></div>
-            <div className="proof-yellow"><strong>+75%</strong><span>average site-speed score</span></div>
+            <div className="proof-yellow"><strong>15 to 20+</strong><span>concurrent retainer tickets</span></div>
           </div>
         </section>
 
@@ -223,19 +277,19 @@ function App() {
         <section className="section profile shell" id="about">
           <div className="section-head" data-reveal>
             <p>01 / Profile</p>
-            <span>Strategy ↔ Execution</span>
+            <span>Scope, delivery and growth</span>
           </div>
           <div className="profile-grid">
             <div className="profile-title" data-reveal>
-              <h2>I make complex<br />delivery feel <em>simple.</em></h2>
+              <h2>Shopify delivery,<br />from brief to<br /><em>ongoing growth.</em></h2>
             </div>
             <div className="profile-copy" data-reveal>
-              <p className="lead">The best project management feels almost invisible.</p>
-              <p>Teams know what matters. Clients know what&apos;s next. Risks surface early, decisions stay documented, and every sprint connects back to a merchant outcome.</p>
+              <p className="lead">I work where merchant goals, technical delivery and client expectations meet.</p>
+              <p>I turn business requests into workable scope, give each specialist the context they need, and keep clients informed before a risk becomes an escalation. My experience covers technical discovery, solution planning, sprints, QA, UAT, Shopify B2B, retainers, CRO and performance optimisation.</p>
               <div className="profile-principles">
-                <span>Clear over clever</span>
-                <span>Proactive over reactive</span>
-                <span>Outcomes over output</span>
+                <span>Scope and onboarding</span>
+                <span>Sprints, QA and UAT</span>
+                <span>Retainers, CRO and growth</span>
               </div>
             </div>
           </div>
@@ -245,11 +299,11 @@ function App() {
           <div className="shell">
             <div className="section-head section-head-light" data-reveal>
               <p>02 / Selected impact</p>
-              <span>Numbers tell the story</span>
+              <span>Figures from my resume</span>
             </div>
             <div className="impact-heading" data-reveal>
-              <h2>Work that moved<br />the <em>needle.</em></h2>
-              <p>Selected outcomes across ecommerce delivery, performance, growth and team operations.</p>
+              <h2>Results, with<br />the <em>context.</em></h2>
+              <p>Delivery, performance and operational outcomes, explained clearly enough to understand in a quick review.</p>
             </div>
             <div className="impact-grid">
               {impact.map((item) => (
@@ -270,13 +324,13 @@ function App() {
         <section className="section experience shell" id="experience">
           <div className="section-head" data-reveal>
             <p>03 / Experience</p>
-            <span>2021 — Present</span>
+            <span>May 2021 to present</span>
           </div>
           <div className="experience-layout">
             <div className="experience-intro" data-reveal>
-              <span className="mini-label">Shopify ecosystem</span>
-              <h2>Four years.<br />One clear<br /><em>through-line.</em></h2>
-              <p>Bring structure to fast-moving ecommerce teams while keeping the client, the commercial goal and the customer experience in view.</p>
+              <span className="mini-label">Professional experience</span>
+              <h2>Shopify delivery,<br /><em>in detail.</em></h2>
+              <p>Company names lead each entry. The responsibilities, results and brand experience below come from my resume.</p>
             </div>
 
             <div className="timeline">
@@ -286,12 +340,18 @@ function App() {
                   <div className="timeline-content">
                     <div className="timeline-top">
                       <div>
-                        <h3>{item.role}</h3>
-                        <p>{item.company}</p>
+                        <div className="timeline-company-row">
+                          <h3>{item.company}</h3>
+                          <span>{item.partner}</span>
+                        </div>
+                        <p className="timeline-role">{item.role}</p>
                       </div>
                       <time>{item.period}</time>
                     </div>
                     <p className="timeline-summary">{item.summary}</p>
+                    <ul className="timeline-points">
+                      {item.points.map((point) => <li key={point}>{point}</li>)}
+                    </ul>
                     <div className="tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                   </div>
                 </article>
@@ -300,15 +360,42 @@ function App() {
           </div>
         </section>
 
+        <section className="section case-studies shell" id="case-studies">
+          <div className="section-head" data-reveal>
+            <p>04 / Case studies</p>
+            <span>Structure ready for Wiro work</span>
+          </div>
+          <div className="case-heading" data-reveal>
+            <div>
+              <span className="mini-label">Next content update</span>
+              <h2>Space for the work<br />behind the <em>results.</em></h2>
+            </div>
+            <p>These are the three case-study formats prepared for the Wiro material you are sending. The final portfolio will show the real project brief, your decisions, the delivery process and approved outcomes.</p>
+          </div>
+          <div className="case-grid">
+            {caseStudySlots.map((study) => (
+              <article className="case-card" key={study.number} data-reveal>
+                <div className="case-top"><span>{study.number}</span><span>Content reserved</span></div>
+                <p>{study.type}</p>
+                <h3>{study.title}</h3>
+                <div className="case-fields">
+                  {study.fields.map((field) => <span key={field}>{field}</span>)}
+                </div>
+                <small>Ready for your source material</small>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="section capabilities" id="capabilities">
           <div className="shell">
             <div className="section-head" data-reveal>
-              <p>04 / Capabilities</p>
-              <span>The operating system</span>
+              <p>05 / Capabilities</p>
+              <span>Skills used in delivery</span>
             </div>
             <div className="capabilities-heading" data-reveal>
-              <h2>What I bring<br />to the <em>table.</em></h2>
-              <p>Equal parts delivery discipline, technical curiosity and client empathy.</p>
+              <h2>Skills I use<br />to run the <em>work.</em></h2>
+              <p>A practical mix of project control, Shopify knowledge, performance thinking and client management.</p>
             </div>
             <div className="capability-grid">
               {capabilities.map((capability, index) => (
@@ -324,12 +411,12 @@ function App() {
               <div>
                 <p className="education-kicker">Education</p>
                 <h3>MBA, Project Management</h3>
-                <p>Jain University · SGPA 9+ · 2022–2024</p>
+                <p>Jain University · SGPA above 9 · 2022 to 2024</p>
               </div>
               <div>
                 <p className="education-kicker">Foundation</p>
                 <h3>BBA (Honours)</h3>
-                <p>CMR University · CGPA 9.5 · 2018–2021</p>
+                <p>CMR University · CGPA 9.5 · 2018 to 2021</p>
               </div>
               <div>
                 <p className="education-kicker">Certification</p>
@@ -342,9 +429,9 @@ function App() {
 
         <section className="contact shell" id="contact" data-reveal>
           <p className="contact-kicker">Let&apos;s connect</p>
-          <h2>Need someone who can<br />hold the plan <em>and</em> the room?</h2>
+          <h2>Have a Shopify project<br />management role <em>in mind?</em></h2>
           <div className="contact-bottom">
-            <p>Let&apos;s talk about ambitious Shopify delivery, strong client relationships and growth that can be measured.</p>
+            <p>I&apos;d be glad to discuss Shopify delivery, technical project management, client relationships and ecommerce growth.</p>
             <div className="contact-actions">
               <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
               <a className="button button-paper" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
