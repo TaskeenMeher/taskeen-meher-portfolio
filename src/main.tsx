@@ -228,6 +228,41 @@ function Arrow() {
   return <span aria-hidden="true">↗</span>;
 }
 
+function CaseVisual({ variant }: { variant: "kick" | "drip" }) {
+  const isKick = variant === "kick";
+
+  return (
+    <div className={`case-visual case-visual-${variant}`} aria-hidden="true" data-parallax="0.006">
+      <div className="case-visual-top">
+        <span>{isKick ? "Kick Game / product spotlight" : "DripModa / mobile-first system"}</span>
+        <span>{isKick ? "01" : "02"}</span>
+      </div>
+      {isKick ? (
+        <svg viewBox="0 0 520 230" role="presentation">
+          <path className="shoe-fill" d="M48 124c44-7 86-27 119-70l72 29c31 12 65 42 111 52l92 20c20 5 31 17 30 33-2 20-22 31-53 31H105c-49 0-76-16-82-43-5-22 5-43 25-52Z" />
+          <path className="shoe-outline" d="M48 124c44-7 86-27 119-70l72 29c31 12 65 42 111 52l92 20c20 5 31 17 30 33-2 20-22 31-53 31H105c-49 0-76-16-82-43-5-22 5-43 25-52Z" />
+          <path className="shoe-detail" d="m168 55 18 76m-2-54 81 35m-66-18 84 36m-65-17 78 34M44 154c81 24 205 34 399 18M111 121c35 10 63 11 93 0" />
+          <path className="shoe-accent" d="M270 116c24 8 42 20 58 36-38-3-70-10-96-23 11-6 24-10 38-13Z" />
+        </svg>
+      ) : (
+        <svg viewBox="0 0 520 230" role="presentation">
+          <g className="shoe-stack shoe-stack-back">
+            <path d="M61 120c43-9 74-24 103-61l62 28c28 13 55 34 92 43l74 18c21 5 31 17 29 32-3 18-20 27-47 27H113c-44 0-70-14-76-37-5-20 4-39 24-50Z" />
+            <path d="m166 61 12 67m8-47 68 31m-52-13 68 31M59 150c72 20 177 26 332 13" />
+          </g>
+          <g className="shoe-stack shoe-stack-front">
+            <path d="M151 99c38-7 66-21 91-52l57 24c25 10 51 31 84 39l66 15c18 5 27 15 25 28-2 16-18 24-42 24H199c-39 0-62-13-67-33-4-17 3-34 19-45Z" />
+            <path d="m243 48 13 58m5-41 57 26m-44-11 58 26m-177 19c61 17 154 22 292 11" />
+          </g>
+        </svg>
+      )}
+      <div className="case-visual-rail">
+        {(isKick ? ["NEW", "UK 06", "UK 08", "AUTHENTIC"] : ["MOBILE", "SEARCH", "CART", "CHECKOUT"]).map((label) => <span key={label}>{label}</span>)}
+      </div>
+    </div>
+  );
+}
+
 function BrandGroup({ hidden = false }: { hidden?: boolean }) {
   return (
     <div aria-hidden={hidden || undefined}>
@@ -450,7 +485,7 @@ function App() {
           </div>
           <div className="case-grid">
             {caseStudies.map((study) => (
-              <article className="case-card" key={study.number} data-reveal>
+              <article className={`case-card case-card-${study.client === "Kick Game" ? "kick" : "drip"}`} key={study.number} data-reveal>
                 <div className="case-top">
                   <span>{study.number} / {study.client}</span>
                   <span>{study.period}</span>
@@ -461,11 +496,14 @@ function App() {
                     <h3>{study.title}</h3>
                     <p>{study.intro}</p>
                   </div>
-                  <div className="case-role">
-                    <p>My delivery scope</p>
-                    <ul>
-                      {study.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}
-                    </ul>
+                  <div className="case-side">
+                    <CaseVisual variant={study.client === "Kick Game" ? "kick" : "drip"} />
+                    <div className="case-role">
+                      <p>My delivery scope</p>
+                      <ul>
+                        {study.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div className="case-metrics" aria-label={`${study.client} measured outcomes`}>

@@ -189,11 +189,28 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .case-card { padding: clamp(28px, 4vw, 50px); border: 2px solid var(--line); background: var(--white); box-shadow: 6px 6px 0 var(--ink); }
 .case-card:nth-child(2) { background: var(--blue); }
 .case-top { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(41,35,31,.55); color: var(--muted); text-transform: uppercase; letter-spacing: .09em; font-size: .53rem; font-weight: 700; }
-.case-main { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(44px, 7vw, 96px); align-items: end; margin-top: 42px; }
+.case-main { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(44px, 6vw, 82px); align-items: start; margin-top: 42px; }
 .case-type { margin: 0 0 10px; color: #865f51; text-transform: uppercase; letter-spacing: .09em; font-size: .58rem; font-weight: 700; }
 .case-story h3 { max-width: 720px; margin: 0; font-family: "Instrument Serif", Georgia, serif; font-size: clamp(2.7rem, 4.7vw, 4.8rem); font-weight: 400; line-height: .95; letter-spacing: -.025em; }
 .case-story > p:last-child { max-width: 690px; margin: 24px 0 0; color: #544c46; font-size: .84rem; line-height: 1.7; }
-.case-role { padding-left: 28px; border-left: 1px solid rgba(41,35,31,.45); }
+.case-side { display: grid; gap: 22px; }
+.case-visual { position: relative; min-height: 205px; overflow: hidden; border: 1.5px solid var(--line); }
+.case-visual-kick { color: var(--white); background: #191816; }
+.case-visual-drip { color: var(--white); background: #304b59; }
+.case-visual::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px); background-size: 24px 24px; }
+.case-visual-top { position: relative; z-index: 2; display: flex; justify-content: space-between; gap: 12px; padding: 13px 15px; border-bottom: 1px solid rgba(255,255,255,.34); text-transform: uppercase; letter-spacing: .08em; font-size: .46rem; font-weight: 700; }
+.case-visual svg { position: absolute; z-index: 1; width: 92%; height: auto; left: 4%; bottom: 17px; overflow: visible; }
+.case-visual .shoe-fill { fill: rgba(255,255,255,.09); }
+.case-visual .shoe-outline, .case-visual .shoe-detail { fill: none; stroke: #f4eee3; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.case-visual .shoe-detail { stroke-width: 2; opacity: .72; }
+.case-visual .shoe-accent { fill: var(--blue); stroke: #f4eee3; stroke-width: 2; }
+.case-visual .shoe-stack { fill: rgba(255,255,255,.06); stroke: #f4eee3; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.case-visual .shoe-stack-front { transform: translate(-10px, 18px) rotate(-4deg); transform-origin: center; }
+.case-visual .shoe-stack-back { opacity: .52; transform: translate(-18px, -8px) rotate(5deg); transform-origin: center; }
+.case-visual-rail { position: absolute; z-index: 3; right: 12px; bottom: 11px; left: 12px; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid rgba(255,255,255,.62); background: rgba(16,16,15,.72); }
+.case-visual-rail span { padding: 7px 5px; border-left: 1px solid rgba(255,255,255,.42); text-align: center; letter-spacing: .08em; font-size: .43rem; font-weight: 700; }
+.case-visual-rail span:first-child { border-left: 0; }
+.case-role { padding-top: 20px; border-top: 1px solid rgba(41,35,31,.45); }
 .case-role > p { margin: 0 0 15px; text-transform: uppercase; letter-spacing: .09em; font-size: .57rem; font-weight: 700; }
 .case-role ul { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
 .case-role li { position: relative; padding-left: 15px; color: #544c46; font-size: .73rem; line-height: 1.55; }
@@ -263,7 +280,9 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .experience-layout { grid-template-columns: .8fr 1.2fr; gap: 60px; }
   .case-card { padding: 30px; }
   .case-main { grid-template-columns: 1fr; gap: 32px; }
-  .case-role { padding: 24px 0 0; border-top: 1px solid rgba(41,35,31,.45); border-left: 0; }
+  .case-side { grid-template-columns: 1fr 1fr; align-items: start; }
+  .case-visual { min-height: 195px; }
+  .case-role { padding: 20px 0 0; }
   .capability-grid { grid-template-columns: 1fr 1fr; }
   .capability-card { border-bottom: 2px solid var(--line); }
   .capability-card:nth-child(odd) { border-left: 0; }
@@ -309,6 +328,8 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .case-top { display: grid; gap: 8px; }
   .case-top span:last-child { text-align: left; }
   .case-main { margin-top: 32px; }
+  .case-side { grid-template-columns: 1fr; }
+  .case-visual { min-height: 188px; }
   .case-story h3 { font-size: clamp(2.55rem, 13vw, 3.6rem); }
   .case-metrics { grid-template-columns: 1fr 1fr; }
   .case-metric { min-height: 126px; border-top: 1px solid rgba(41,35,31,.45); }
