@@ -20,8 +20,8 @@
 }
 
 * { box-sizing: border-box; }
-html { overflow-x: hidden; scroll-behavior: smooth; }
-body { margin: 0; min-width: 0; overflow-x: hidden; background: var(--paper); }
+html { overflow-x: clip; scroll-behavior: smooth; }
+body { margin: 0; min-width: 0; overflow-x: clip; background: var(--paper); }
 body, button, a { -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }
@@ -160,8 +160,8 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .experience-intro { position: sticky; top: 44px; }
 .mini-label { display: inline-block; margin-bottom: 28px; padding: 8px 11px; border: 1.5px solid var(--line); background: var(--coral); box-shadow: 2px 2px 0 var(--ink); text-transform: uppercase; letter-spacing: .06em; font-size: .6rem; font-weight: 700; transform: rotate(-.7deg); }
 .experience-intro h2 { font-size: clamp(3.4rem, 5.6vw, 5.8rem); }
-.experience-intro > p { max-width: 420px; margin: 27px 0 0; color: var(--muted); line-height: 1.68; }
-.timeline { border-top: 2px solid var(--line); }
+.experience-intro-content > p { max-width: 420px; margin: 27px 0 0; color: var(--muted); line-height: 1.68; }
+.timeline { border-top: 0; }
 .timeline-item { display: grid; grid-template-columns: 48px 1fr; padding: 28px 0 32px; border-bottom: 1.5px solid var(--line); }
 .timeline-number { font-family: "Archivo Black", sans-serif; font-size: .65rem; }
 .timeline-top { display: flex; justify-content: space-between; gap: 24px; }
