@@ -407,7 +407,7 @@ function App() {
             <div className="experience-intro" data-reveal>
               <span className="mini-label">Professional experience</span>
               <h2>Delivery,<br />operations and<br /><em>growth.</em></h2>
-              <p>My experience spans technical project management, client services, process improvement and business development. Each role strengthened how I plan work, lead teams and deliver commercial results.</p>
+              <p>My experience spans technical project management, client services, process improvement and business development. Across these roles, I have translated business priorities into clear scopes, coordinated cross-functional teams, strengthened delivery processes and kept clients aligned through change. That combination has shaped how I plan work, manage risk and deliver outcomes that support both customer experience and commercial growth.</p>
             </div>
 
             <div className="timeline">
