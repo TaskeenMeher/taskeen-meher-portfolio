@@ -6,27 +6,30 @@ import { setupParallax } from "./parallax";
 const experience = [
   {
     company: "Wiro",
+    logo: "company-wiro.png",
     partner: "Shopify Premier Partner",
     role: "Technical Project Manager",
-    period: "June 2025 to present",
+    period: "June 2025 - Present",
     summary:
-      "I manage technical builds and growth retainers from the first client conversation through launch and ongoing optimisation.",
+      "I deliver end-to-end technical builds and growth retainers, coordinating work from discovery and scoping through launch, optimisation and renewal planning.",
     points: [
-      "Lead technical scoping, onboarding and solution architecture across pre-sales and delivery phases.",
-      "Prioritise 15 to 20+ concurrent retainer tickets across enhancements, CRO initiatives and performance optimisation.",
+      "Write technical scopes, requirement documentation, risk logs and mitigation plans across pre-sales and delivery phases.",
+      "Manage a live retainer backlog of 15 to 20+ tickets across enhancements, CRO initiatives and performance optimisation.",
       "Run sprint planning, stand-ups, demos, QA and UAT while keeping scope, dependencies and decisions visible.",
-      "Coordinate developers, designers, QA, CRO and GA4 specialists to improve conversion, AOV and site performance.",
+      "Coordinate developers, designers, QA, CRO and GA4 specialists, including A/B testing tasks and analytics-led improvements.",
+      "Review growth roadmaps, plan new initiatives and conduct client questionnaires to shape the next six-month programme.",
       "Use AI tools to speed up SOW creation, requirement documentation and early risk analysis.",
       "Track financials, risks and KPIs, strengthen client relationships and support retainer renewals.",
-      <>Maintain a 100% on-time and within-budget delivery record with zero escalations, including work for <strong>Kick Game</strong> and <strong>DripModa</strong>.</>,
+      <>Maintain a 100% on-time and within-budget delivery record with zero escalations, including work for <strong>KickGame</strong>, <strong>DripModa</strong>, <strong>Revitive</strong>, <strong>RPSDY</strong>, <strong>YAGI</strong> and <strong>SEERs</strong>.</>,
     ],
     tags: ["Shopify Plus", "Technical scoping", "Retainers", "CRO"],
   },
   {
     company: "Tenovia",
+    logo: "company-tenovia.png",
     partner: "Shopify Plus agency",
     role: "Project Manager",
-    period: "September 2024 to June 2025",
+    period: "September 2024 - June 2025",
     summary:
       "I led enterprise and B2B ecommerce delivery, with a focus on process control, client retention and site performance.",
     points: [
@@ -42,9 +45,10 @@ const experience = [
   },
   {
     company: "Marmeto",
+    logo: "company-marmeto.png",
     partner: "Shopify Platinum Partner",
     role: "Project Manager",
-    period: "October 2022 to August 2024",
+    period: "October 2022 - August 2024",
     summary:
       "I was the day-to-day client lead for a broad portfolio of high-growth ecommerce brands and Shopify B2B work.",
     points: [
@@ -55,15 +59,16 @@ const experience = [
       "Maintained an average CSAT of 4.5/5 and consistently achieved a 5/5 KPI scorecard.",
       "Identified relevant opportunities to extend accounts into other agency services.",
       "Worked hands-on with Shopify B2B environments.",
-      <>Managed accounts including <strong>boAt</strong>, <strong>Slurrp Farm</strong>, <strong>Enamor</strong>, <strong>Durex</strong>, <strong>Urban Monkey</strong>, <strong>4700 BC</strong>, <strong>Superkicks</strong>, <strong>TBOF</strong>, <strong>FableStreet</strong>, <strong>Nasher Miles</strong>, <strong>Black Tulip</strong>, <strong>Rihaa</strong>, <strong>PinkFort</strong>, <strong>March Jewellery</strong>, <strong>Nestroots</strong>, <strong>Reise Moto</strong> and <strong>Power Gummies</strong>.</>,
+      <>Managed accounts including <strong>boAt</strong>, <strong>Slurrp Farm</strong>, <strong>Enamor</strong>, <strong>Durex</strong>, <strong>Urban Monkey</strong>, <strong>4700 BC</strong>, <strong>Superkicks</strong>, <strong>Two Brothers Organic Farm</strong>, <strong>FableStreet</strong>, <strong>Nasher Miles</strong>, <strong>Black Tulip</strong>, <strong>Rihaa</strong>, <strong>PinkFort</strong>, <strong>March Jewellery</strong>, <strong>Nestroots</strong>, <strong>Reise Moto</strong> and <strong>Power Gummies</strong>.</>,
     ],
     tags: ["Client leadership", "Risk", "Workshops", "Upsell"],
   },
   {
     company: "Growth99",
+    logo: "company-growth99.png",
     partner: "Health-tech growth platform",
     role: "Project Manager",
-    period: "March 2022 to September 2022",
+    period: "March 2022 - September 2022",
     summary:
       "I helped shape the operating process while managing two teams across project delivery and client support.",
     points: [
@@ -77,9 +82,10 @@ const experience = [
   },
   {
     company: "QuickMove Technologies",
+    logo: "company-quickmove.png",
     partner: "Business technology services",
     role: "Business Development Executive",
-    period: "May 2021 to February 2022",
+    period: "May 2021 - February 2022",
     summary:
       "My first commercial role built the client and growth foundation I now bring to project delivery.",
     points: [
@@ -134,13 +140,13 @@ const impact = [
 const caseStudies = [
   {
     number: "01",
-    client: "Kick Game",
+    client: "KickGame",
     type: "Relaunch and ongoing growth",
     period: "Three-month pre/post review",
     source: "Performance review · 8 July 2026",
-    title: "Improving conversion while acquisition changed around the business.",
+    title: "A relaunch that converted more visitors despite a sharp drop in traffic.",
     intro:
-      "The relaunch went live as Kick Game faced a sharp drop in acquisition after losing exclusivity on a major product range. My focus was to keep the build and retainer moving while the team improved the experience for the traffic that remained.",
+      "KickGame relaunched while traffic fell sharply following the loss of exclusivity on a major product range. I kept the build and retainer work moving, coordinated delivery priorities and helped the team improve conversion from the visitors who reached the site.",
     responsibilities: [
       "Technical scoping, sprint planning and launch coordination",
       "Developer, design, QA, CRO and data-team alignment",
@@ -166,9 +172,9 @@ const caseStudies = [
     intro:
       "The previous store carried a heavy app stack, duplicate tracking, 13MB-plus product pages and bundle issues. The programme rebuilt the experience on a more maintainable foundation and concentrated delivery around mobile discovery, product confidence and checkout.",
     responsibilities: [
-      "Coordinated a modular, GitHub-based rebuild and leaner app stack",
-      "Aligned navigation, search, PDP, cart and bundle work across teams",
-      "Managed launch, retainer priorities and CRO testing handoffs",
+      "Translated business needs into technical requirements, delivery phases and an accountable launch plan",
+      "Coordinated developers, designers and QA across discovery, build, integrations and UAT",
+      "Managed launch readiness, post-launch priorities and CRO experimentation handoffs",
     ],
     metrics: [
       { value: "+34%", label: "Add-to-cart rate", detail: "5.97% to 8.01%" },
@@ -191,12 +197,12 @@ const capabilities = [
   {
     number: "02",
     title: "Technical clarity",
-    items: ["Technical scoping", "Solution planning", "SOW creation", "Shopify B2B"],
+    items: ["Technical scope writing", "Solution planning", "Risk logs & mitigation", "SOW creation"],
   },
   {
     number: "03",
     title: "Growth thinking",
-    items: ["CRO strategy", "GA4 collaboration", "Microsoft Clarity", "Performance optimisation"],
+    items: ["Growth roadmaps", "A/B testing coordination", "CRO strategy", "Analytics collaboration"],
   },
   {
     number: "04",
@@ -213,14 +219,14 @@ const brands = [
   { name: "Urban Monkey", mark: "UM", className: "brand-urban", sharkTank: true },
   { name: "Nasher Miles", mark: "nm", className: "brand-nasher", sharkTank: true },
   { name: "Enamor", mark: "enamor", className: "brand-enamor" },
-  { name: "TBOF", mark: "TBOF", className: "brand-tbof" },
+  { name: "Two Brothers Organic Farm", mark: "TBOF", className: "brand-tbof" },
   { name: "Superkicks", mark: "SUPERKICKS", className: "brand-superkicks" },
   { name: "Pavers England", mark: "PAVERS", className: "brand-pavers" },
   { name: "Slurrp Farm", mark: "slurrp", className: "brand-slurrp" },
   { name: "FableStreet", mark: "FableStreet", className: "brand-fable" },
   { name: "YAGI", mark: "YAGI", className: "brand-yagi" },
   { name: "Revitive", mark: "revitive", className: "brand-revitive" },
-  { name: "Kick Game", mark: "KICK GAME", className: "brand-kick" },
+  { name: "KickGame", mark: "KICKGAME", className: "brand-kick" },
   { name: "DripModa", mark: "DripModa", className: "brand-drip" },
 ];
 
@@ -241,7 +247,7 @@ function BrandGroup({ hidden = false }: { hidden?: boolean }) {
           >
             <b className="brand-mark">{brand.mark}</b>
             <span className="brand-caption">{brand.name}</span>
-            {brand.sharkTank && <small className="brand-note">Shark Tank India</small>}
+            {brand.sharkTank && <small className="brand-note"><span className="shark-sticker" aria-hidden="true">🦈</span> Shark Tank India</small>}
           </span>
         ))
       ))}
@@ -307,7 +313,7 @@ function App() {
         <section className="hero shell" id="top">
           <div className="hero-pills" aria-label="Professional focus" data-parallax="0.012">
             <span className="pill pill-lilac">✦ Technical PM</span>
-            <span className="pill pill-yellow">◫ Digital delivery</span>
+            <span className="pill pill-yellow">◫ Project delivery</span>
             <span className="pill pill-coral">↗ Operations &amp; growth</span>
             <span className="pill pill-blue">⌁ Bangalore | India</span>
           </div>
@@ -339,7 +345,7 @@ function App() {
             <div className="proof-lilac"><strong>4+</strong><span>years managing cross-functional projects</span></div>
             <div className="proof-blue"><strong>100%</strong><span>on-time and within-budget delivery at WIRO Shopify Premier Agency</span></div>
             <div className="proof-coral"><strong>4.5/5</strong><span>average client satisfaction</span></div>
-            <div className="proof-yellow"><strong>15 to 20+</strong><span>concurrent retainer tickets</span></div>
+            <div className="proof-yellow"><strong>15 to 20+</strong><span>active tickets across retainer backlogs</span></div>
           </div>
         </section>
 
@@ -361,7 +367,7 @@ function App() {
             </div>
             <div className="profile-copy" data-reveal>
               <p className="lead">I work where business goals, technical delivery and stakeholder expectations meet.</p>
-              <p>Across one-time builds and ongoing retainers, I translate business goals into clear scopes, practical delivery plans and accountable workstreams. I collaborate with developers, designers, QA and analytics teams, manage priorities, risks and budgets, and keep clients and internal stakeholders aligned from discovery through launch and optimisation. I also strengthen delivery processes, support commercial growth and use performance data to guide what the team tackles next.</p>
+              <p>Across one-time builds and ongoing retainers, I translate business goals and technical requirements into clear scopes, practical delivery plans and accountable workstreams. I collaborate with developers, designers, QA and analytics teams, manage priorities, risks and budgets, and keep clients and internal stakeholders aligned from discovery through launch and optimisation. I also strengthen delivery processes, support commercial growth and use performance data to guide what the team tackles next.</p>
               <div className="profile-principles">
                 <span>Scope and onboarding</span>
                 <span>Sprints, QA and UAT</span>
@@ -375,17 +381,17 @@ function App() {
         <section className="section impact" id="impact">
           <div className="shell">
             <div className="section-head section-head-light" data-reveal>
-              <p>02 / Selected impact</p>
-              <span>Figures from my resume</span>
+              <p>02 / Impact</p>
+              <span>The numbers tell the story</span>
             </div>
             <div className="impact-heading" data-reveal>
               <h2>Results, with<br />the <em>context.</em></h2>
-              <p>Delivery, performance and operational outcomes, explained clearly enough to understand in a quick review.</p>
+              <p>A snapshot of the delivery, performance and operational results I have helped teams achieve.</p>
             </div>
             <div className="impact-grid">
               {impact.map((item) => (
                 <article className={`impact-card ${item.className}`} key={item.number} data-reveal>
-                  <div className="impact-topline"><span>{item.number}</span><span>Selected outcome</span></div>
+                  <div className="impact-topline"><span>{item.number}</span><span>Measured outcome</span></div>
                   <div className="impact-metric"><strong data-parallax="0.012">{item.metric}</strong><span>{item.metricLabel}</span></div>
                   <div className="impact-copy">
                     <h3>{item.title}</h3>
@@ -401,7 +407,7 @@ function App() {
         <section className="section experience shell" id="experience">
           <div className="section-head" data-reveal>
             <p>03 / Experience</p>
-            <span>May 2021 to present</span>
+            <span>May 2021 - Present</span>
           </div>
           <div className="experience-layout">
             <div className="experience-intro" data-reveal>
@@ -416,12 +422,15 @@ function App() {
                   <div className="timeline-number">0{index + 1}</div>
                   <div className="timeline-content">
                     <div className="timeline-top">
-                      <div>
+                      <div className="timeline-identity">
+                        <img className="timeline-logo" src={`${base}${item.logo}`} alt="" aria-hidden="true" />
+                        <div>
                         <div className="timeline-company-row">
                           <h3>{item.company}</h3>
                           <span>{item.partner}</span>
                         </div>
                         <p className="timeline-role">{item.role}</p>
+                        </div>
                       </div>
                       <time>{item.period}</time>
                     </div>
@@ -451,10 +460,10 @@ function App() {
           </div>
           <div className="case-grid">
             {caseStudies.map((study) => (
-              <article className={`case-card case-card-${study.client === "Kick Game" ? "kick" : "drip"}`} key={study.number} data-reveal>
+              <article className={`case-card case-card-${study.client === "KickGame" ? "kick" : "drip"}`} key={study.number} data-reveal>
                 <div
                   className="case-photo"
-                  style={{ backgroundImage: `url(${base}${study.client === "Kick Game" ? "kick-game-sneaker-background.jpg" : "dripmoda-sportswear-background.jpg"})` }}
+                  style={{ backgroundImage: `url(${base}${study.client === "KickGame" ? "kick-game-sneaker-background.jpg" : "dripmoda-sportswear-background.jpg"})` }}
                   aria-hidden="true"
                 />
                 <div className="case-top">
@@ -517,19 +526,35 @@ function App() {
               ))}
             </div>
 
+            <div className="education-heading" data-reveal>
+              <p>Education</p>
+              <span>Academic foundation and professional learning</span>
+            </div>
             <div className="education" data-reveal>
-              <div>
-                <p className="education-kicker">Education</p>
+              <article>
+                <div className="education-card-top">
+                  <div className="education-wordmark education-wordmark-jain" aria-hidden="true">JAIN</div>
+                  <p className="education-kicker">Post-graduation</p>
+                </div>
                 <h3>MBA, Project Management</h3>
-                <p>Jain University · SGPA above 9 · 2022 to 2024</p>
-              </div>
-              <div>
-                <p className="education-kicker">Foundation</p>
+                <p>Jain University · SGPA above 9 · 2022 - 2024</p>
+              </article>
+              <article>
+                <div className="education-card-top">
+                  <div className="education-wordmark education-wordmark-cmr" aria-hidden="true">CMR</div>
+                  <p className="education-kicker">Undergraduate</p>
+                </div>
                 <h3>BBA (Honours)</h3>
-                <p>CMR University · CGPA 9.5 · 2018 to 2021</p>
-              </div>
-              <div>
-                <p className="education-kicker">Certification</p>
+                <p>CMR University · CGPA 9.5 · 2018 - 2021</p>
+              </article>
+              <article>
+                <div className="education-card-top">
+                  <div className="education-google-lockup" aria-label="Google via Coursera">
+                    <span className="google-wordmark"><i>G</i><i>o</i><i>o</i><i>g</i><i>l</i><i>e</i></span>
+                    <small>via Coursera</small>
+                  </div>
+                  <p className="education-kicker">Professional certification</p>
+                </div>
                 <h3>Google Project Management</h3>
                 <p>Coursera Digital Certificate Program · 2021</p>
                 <ul className="certification-list">
@@ -540,7 +565,7 @@ function App() {
                   <li>Agile Project Management</li>
                   <li>Capstone: Applying Project Management in the Real World</li>
                 </ul>
-              </div>
+              </article>
             </div>
           </div>
         </section>
@@ -549,7 +574,7 @@ function App() {
           <p className="contact-kicker">Let&apos;s connect</p>
           <h2>Have a complex project<br />that needs <em>clear ownership?</em></h2>
           <div className="contact-bottom">
-            <p>I&apos;d be glad to discuss technical project management, digital delivery, operations, client programmes and growth roles across industries.</p>
+            <p>I&apos;d be glad to discuss technical project management, project delivery, operations, client programmes and growth roles across industries.</p>
             <div className="contact-actions">
               <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
               <a className="button button-paper" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
@@ -560,7 +585,7 @@ function App() {
 
       <footer className="footer shell">
         <a className="mark mark-small" href="#top" aria-label="Back to top"><span>TM</span></a>
-        <p>Technical Project Manager · Digital delivery and growth</p>
+        <p>Technical Project Manager · Project delivery, operations and growth</p>
         <p>© 2026 Taskeen Meher</p>
         <a href="#top">Back to top ↑</a>
       </footer>
