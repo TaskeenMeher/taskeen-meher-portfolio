@@ -206,61 +206,26 @@ const capabilities = [
 ];
 
 const brands = [
-  { name: "boAt", className: "brand-boat" },
-  { name: "Bestseller", className: "brand-bestseller" },
-  { name: "Health & Glow", className: "brand-health" },
-  { name: "Durex", className: "brand-durex" },
-  { name: "Urban Monkey", className: "brand-urban", sharkTank: true },
-  { name: "Nasher Miles", className: "brand-nasher", sharkTank: true },
-  { name: "Enamor", className: "brand-enamor" },
-  { name: "TBOF", className: "brand-tbof" },
-  { name: "Superkicks", className: "brand-superkicks" },
-  { name: "Pavers England", className: "brand-pavers" },
-  { name: "Slurrp Farm", className: "brand-slurrp" },
-  { name: "FableStreet", className: "brand-fable" },
-  { name: "YAGI", className: "brand-yagi" },
-  { name: "Revitive", className: "brand-revitive" },
-  { name: "Kick Game", className: "brand-kick" },
-  { name: "DripModa", className: "brand-drip" },
+  { name: "boAt", mark: "boAt", className: "brand-boat" },
+  { name: "Bestseller", mark: "BESTSELLER", className: "brand-bestseller" },
+  { name: "Health & Glow", mark: "H&G", className: "brand-health" },
+  { name: "Durex", mark: "durex", className: "brand-durex" },
+  { name: "Urban Monkey", mark: "UM", className: "brand-urban", sharkTank: true },
+  { name: "Nasher Miles", mark: "nm", className: "brand-nasher", sharkTank: true },
+  { name: "Enamor", mark: "enamor", className: "brand-enamor" },
+  { name: "TBOF", mark: "TBOF", className: "brand-tbof" },
+  { name: "Superkicks", mark: "SUPERKICKS", className: "brand-superkicks" },
+  { name: "Pavers England", mark: "PAVERS", className: "brand-pavers" },
+  { name: "Slurrp Farm", mark: "slurrp", className: "brand-slurrp" },
+  { name: "FableStreet", mark: "FableStreet", className: "brand-fable" },
+  { name: "YAGI", mark: "YAGI", className: "brand-yagi" },
+  { name: "Revitive", mark: "revitive", className: "brand-revitive" },
+  { name: "Kick Game", mark: "KICK GAME", className: "brand-kick" },
+  { name: "DripModa", mark: "DripModa", className: "brand-drip" },
 ];
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>;
-}
-
-function CaseVisual({ variant }: { variant: "kick" | "drip" }) {
-  const isKick = variant === "kick";
-
-  return (
-    <div className={`case-visual case-visual-${variant}`} aria-hidden="true" data-parallax="0.006">
-      <div className="case-visual-top">
-        <span>{isKick ? "Kick Game / product spotlight" : "DripModa / mobile-first system"}</span>
-        <span>{isKick ? "01" : "02"}</span>
-      </div>
-      {isKick ? (
-        <svg viewBox="0 0 520 230" role="presentation">
-          <path className="shoe-fill" d="M48 124c44-7 86-27 119-70l72 29c31 12 65 42 111 52l92 20c20 5 31 17 30 33-2 20-22 31-53 31H105c-49 0-76-16-82-43-5-22 5-43 25-52Z" />
-          <path className="shoe-outline" d="M48 124c44-7 86-27 119-70l72 29c31 12 65 42 111 52l92 20c20 5 31 17 30 33-2 20-22 31-53 31H105c-49 0-76-16-82-43-5-22 5-43 25-52Z" />
-          <path className="shoe-detail" d="m168 55 18 76m-2-54 81 35m-66-18 84 36m-65-17 78 34M44 154c81 24 205 34 399 18M111 121c35 10 63 11 93 0" />
-          <path className="shoe-accent" d="M270 116c24 8 42 20 58 36-38-3-70-10-96-23 11-6 24-10 38-13Z" />
-        </svg>
-      ) : (
-        <svg viewBox="0 0 520 230" role="presentation">
-          <g className="shoe-stack shoe-stack-back">
-            <path d="M61 120c43-9 74-24 103-61l62 28c28 13 55 34 92 43l74 18c21 5 31 17 29 32-3 18-20 27-47 27H113c-44 0-70-14-76-37-5-20 4-39 24-50Z" />
-            <path d="m166 61 12 67m8-47 68 31m-52-13 68 31M59 150c72 20 177 26 332 13" />
-          </g>
-          <g className="shoe-stack shoe-stack-front">
-            <path d="M151 99c38-7 66-21 91-52l57 24c25 10 51 31 84 39l66 15c18 5 27 15 25 28-2 16-18 24-42 24H199c-39 0-62-13-67-33-4-17 3-34 19-45Z" />
-            <path d="m243 48 13 58m5-41 57 26m-44-11 58 26m-177 19c61 17 154 22 292 11" />
-          </g>
-        </svg>
-      )}
-      <div className="case-visual-rail">
-        {(isKick ? ["NEW", "UK 06", "UK 08", "AUTHENTIC"] : ["MOBILE", "SEARCH", "CART", "CHECKOUT"]).map((label) => <span key={label}>{label}</span>)}
-      </div>
-    </div>
-  );
 }
 
 function BrandGroup({ hidden = false }: { hidden?: boolean }) {
@@ -274,8 +239,9 @@ function BrandGroup({ hidden = false }: { hidden?: boolean }) {
             aria-hidden={hidden || cycle > 0 || undefined}
             aria-label={!hidden && cycle === 0 ? brand.name : undefined}
           >
-            <b>{brand.name}</b>
-            {brand.sharkTank && <small>Shark Tank India</small>}
+            <b className="brand-mark">{brand.mark}</b>
+            <span className="brand-caption">{brand.name}</span>
+            {brand.sharkTank && <small className="brand-note">Shark Tank India</small>}
           </span>
         ))
       ))}
@@ -343,16 +309,16 @@ function App() {
             <span className="pill pill-lilac">✦ Technical PM</span>
             <span className="pill pill-yellow">◫ Digital delivery</span>
             <span className="pill pill-coral">↗ Operations &amp; growth</span>
-            <span className="pill pill-blue">⌁ Bangalore</span>
+            <span className="pill pill-blue">⌁ Bangalore | India</span>
           </div>
 
           <div className="hero-grid">
             <div className="hero-copy-block" data-parallax="0.018">
               <p className="hero-kicker">Hello, I&apos;m</p>
               <h1><span>Taskeen</span><span>Meher</span></h1>
-              <h2>Technical Project Manager<br />for digital delivery and growth.</h2>
+              <h2>Technical Project Manager<br />driving delivery, operations and growth.</h2>
               <p className="hero-intro">
-                I turn complex requirements into practical delivery plans, aligned cross-functional teams and clear outcomes. My experience covers one-time builds, ongoing programmes, process improvement, client growth and performance-led ecommerce work.
+                I turn complex requirements into practical delivery plans, aligned cross-functional teams and clear outcomes. My experience covers one-time builds, retainer projects, process improvement, client growth and performance-led ecommerce work.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#impact">See my impact <span aria-hidden="true">↓</span></a>
@@ -370,8 +336,8 @@ function App() {
           </div>
 
           <div className="proof" aria-label="Career highlights" data-parallax="0.01">
-            <div className="proof-lilac"><strong>4+</strong><span>years in agency project delivery</span></div>
-            <div className="proof-blue"><strong>100%</strong><span>on time and within budget at Wiro</span></div>
+            <div className="proof-lilac"><strong>4+</strong><span>years managing cross-functional projects</span></div>
+            <div className="proof-blue"><strong>100%</strong><span>on-time and within-budget delivery at WIRO Shopify Premier Agency</span></div>
             <div className="proof-coral"><strong>4.5/5</strong><span>average client satisfaction</span></div>
             <div className="proof-yellow"><strong>15 to 20+</strong><span>concurrent retainer tickets</span></div>
           </div>
@@ -387,7 +353,7 @@ function App() {
         <section className="section profile shell" id="about">
           <div className="section-head" data-reveal>
             <p>01 / Profile</p>
-            <span>Transferable project leadership</span>
+            <span>Technical project management</span>
           </div>
           <div className="profile-grid">
             <div className="profile-title" data-reveal>
@@ -395,7 +361,7 @@ function App() {
             </div>
             <div className="profile-copy" data-reveal>
               <p className="lead">I work where business goals, technical delivery and stakeholder expectations meet.</p>
-              <p>Agency work has made Shopify and Shopify Plus a strong part of my technical background, but the core of my role is broader. I shape requirements, plan the approach with developers and designers, manage scope and risk, and keep stakeholders informed. On one-time builds, I help brainstorm the technical stack and delivery plan before work begins. On ongoing programmes, I manage priorities, performance improvements and client growth.</p>
+              <p>Across one-time builds and ongoing retainers, I translate business goals into clear scopes, practical delivery plans and accountable workstreams. I collaborate with developers, designers, QA and analytics teams, manage priorities, risks and budgets, and keep clients and internal stakeholders aligned from discovery through launch and optimisation. I also strengthen delivery processes, support commercial growth and use performance data to guide what the team tackles next.</p>
               <div className="profile-principles">
                 <span>Scope and onboarding</span>
                 <span>Sprints, QA and UAT</span>
@@ -486,6 +452,11 @@ function App() {
           <div className="case-grid">
             {caseStudies.map((study) => (
               <article className={`case-card case-card-${study.client === "Kick Game" ? "kick" : "drip"}`} key={study.number} data-reveal>
+                <div
+                  className="case-photo"
+                  style={{ backgroundImage: `url(${base}${study.client === "Kick Game" ? "kick-game-sneaker-background.jpg" : "dripmoda-sportswear-background.jpg"})` }}
+                  aria-hidden="true"
+                />
                 <div className="case-top">
                   <span>{study.number} / {study.client}</span>
                   <span>{study.period}</span>
@@ -497,7 +468,6 @@ function App() {
                     <p>{study.intro}</p>
                   </div>
                   <div className="case-side">
-                    <CaseVisual variant={study.client === "Kick Game" ? "kick" : "drip"} />
                     <div className="case-role">
                       <p>My delivery scope</p>
                       <ul>

@@ -54,7 +54,7 @@ img { display: block; max-width: 100%; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr); gap: clamp(48px, 7vw, 100px); align-items: center; }
 .hero-copy-block { min-width: 0; }
 .hero-kicker { margin: 0 0 10px; text-transform: uppercase; letter-spacing: .14em; font-size: .7rem; font-weight: 700; }
-.hero h1 { margin: 0; font-family: "Archivo Black", sans-serif; font-size: clamp(4.7rem, 8.4vw, 8.2rem); font-weight: 400; line-height: .75; letter-spacing: -.07em; text-transform: uppercase; }
+.hero h1 { margin: 0; font-family: "Archivo Black", sans-serif; font-size: clamp(4.2rem, 7.4vw, 7.3rem); font-weight: 400; line-height: .78; letter-spacing: -.07em; text-transform: uppercase; }
 .hero h1 span { display: block; }
 .hero h2 { margin: 32px 0 0; font-size: clamp(1.25rem, 2vw, 1.8rem); font-weight: 700; line-height: 1.15; letter-spacing: -.035em; text-transform: uppercase; }
 .hero-intro { max-width: 680px; margin: 24px 0 0; color: #554b46; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.55; }
@@ -84,37 +84,32 @@ img { display: block; max-width: 100%; }
 .proof strong { font-family: "Archivo Black", sans-serif; font-size: clamp(1.85rem, 3.3vw, 3rem); font-weight: 400; line-height: 1; letter-spacing: -.055em; }
 .proof span { max-width: 150px; font-size: .7rem; line-height: 1.35; }
 
-.ticker { overflow: hidden; padding: 13px 0; border-block: 2px solid var(--line); background: var(--ink); color: var(--white); }
+.ticker { position: relative; overflow: hidden; padding: 17px 0; border-block: 2px solid var(--line); background: #241e1a; color: var(--white); }
+.ticker::before, .ticker::after { content: ""; position: absolute; z-index: 2; inset-block: 0; width: clamp(28px, 6vw, 88px); pointer-events: none; }
+.ticker::before { left: 0; background: linear-gradient(90deg, #241e1a, rgba(36,30,26,0)); }
+.ticker::after { right: 0; background: linear-gradient(270deg, #241e1a, rgba(36,30,26,0)); }
 .ticker-track { display: flex; width: max-content; animation: ticker 105s linear infinite; }
-.ticker-track > div { display: flex; align-items: center; gap: 13px; padding-right: 13px; white-space: nowrap; }
-.brand-logo { min-width: 150px; min-height: 58px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 7px 18px; border: 1px solid #615851; color: var(--ink); background: var(--white); font-style: normal; }
-.brand-logo b { font-size: 1rem; line-height: 1; }
-.brand-logo small { padding: 4px 5px; border: 1px solid currentColor; color: #7a5b4f; text-transform: uppercase; letter-spacing: .06em; font-size: .38rem; font-weight: 700; }
-.brand-boat b { font-family: "Archivo Black", sans-serif; letter-spacing: -.08em; }
-.brand-bestseller b { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; }
-.brand-health b { font-weight: 500; }
-.brand-durex { color: white; background: #32588d; }
-.brand-durex b { font-size: 1.25rem; font-style: italic; letter-spacing: -.04em; }
-.brand-urban { min-width: 210px; color: white; background: #2b2b29; }
-.brand-urban b { font-family: "Archivo Black", sans-serif; text-transform: uppercase; letter-spacing: -.03em; font-size: .82rem; }
-.brand-urban small { color: #d7c992; }
-.brand-nasher { min-width: 205px; background: var(--yellow); }
-.brand-nasher b { text-transform: lowercase; letter-spacing: -.04em; }
-.brand-enamor b { font-family: "Instrument Serif", Georgia, serif; font-size: 1.3rem; font-weight: 400; }
-.brand-tbof { background: var(--coral); }
-.brand-tbof b { font-family: "Archivo Black", sans-serif; letter-spacing: .05em; }
-.brand-superkicks b { text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; }
-.brand-pavers { min-width: 190px; background: var(--lilac); }
-.brand-pavers b { letter-spacing: .04em; }
-.brand-slurrp { min-width: 175px; background: var(--yellow); }
-.brand-slurrp b { font-weight: 700; letter-spacing: -.04em; }
-.brand-fable b { font-family: "Instrument Serif", Georgia, serif; font-size: 1.25rem; font-weight: 400; }
-.brand-yagi { background: var(--blue); }
-.brand-yagi b { font-family: "Archivo Black", sans-serif; letter-spacing: .18em; }
-.brand-revitive { min-width: 175px; color: white; background: #49778b; }
-.brand-revitive b { text-transform: lowercase; letter-spacing: -.03em; font-size: 1.15rem; }
-.brand-kick b { text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; }
-.brand-drip b { font-family: "Instrument Serif", Georgia, serif; font-size: 1.35rem; font-weight: 400; font-style: italic; }
+.ticker-track > div { display: flex; align-items: stretch; white-space: nowrap; }
+.brand-logo { position: relative; min-width: 184px; min-height: 78px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; padding: 5px 28px; border-left: 1px solid rgba(244,238,227,.16); color: var(--white); font-style: normal; }
+.brand-mark { min-height: 29px; display: inline-flex; align-items: center; justify-content: center; color: #f7f1e8; font-size: 1.05rem; line-height: 1; }
+.brand-caption { margin-top: 6px; color: #aaa097; text-transform: uppercase; letter-spacing: .14em; font-size: .43rem; font-weight: 600; line-height: 1; }
+.brand-note { margin-top: 6px; color: #d8ca93; text-transform: uppercase; letter-spacing: .1em; font-size: .34rem; font-weight: 700; line-height: 1; }
+.brand-boat .brand-mark { font-family: "Archivo Black", sans-serif; letter-spacing: -.08em; }
+.brand-bestseller .brand-mark { letter-spacing: .13em; font-size: .75rem; }
+.brand-health .brand-mark { font-family: "Instrument Serif", Georgia, serif; font-size: 1.55rem; font-weight: 400; letter-spacing: -.05em; }
+.brand-durex .brand-mark { font-size: 1.3rem; font-style: italic; letter-spacing: -.05em; }
+.brand-urban .brand-mark { font-family: "Archivo Black", sans-serif; font-size: 1.2rem; letter-spacing: .08em; }
+.brand-nasher .brand-mark { font-family: "Instrument Serif", Georgia, serif; font-size: 1.45rem; font-weight: 400; letter-spacing: -.08em; }
+.brand-enamor .brand-mark { font-family: "Instrument Serif", Georgia, serif; font-size: 1.35rem; font-weight: 400; }
+.brand-tbof .brand-mark { font-family: "Archivo Black", sans-serif; letter-spacing: .09em; }
+.brand-superkicks .brand-mark { letter-spacing: .09em; font-size: .72rem; }
+.brand-pavers .brand-mark { letter-spacing: .12em; font-size: .82rem; }
+.brand-slurrp .brand-mark { font-size: 1.05rem; letter-spacing: -.04em; }
+.brand-fable .brand-mark { font-family: "Instrument Serif", Georgia, serif; font-size: 1.25rem; font-weight: 400; }
+.brand-yagi .brand-mark { font-family: "Archivo Black", sans-serif; letter-spacing: .2em; }
+.brand-revitive .brand-mark { font-size: 1.2rem; letter-spacing: -.04em; }
+.brand-kick .brand-mark { letter-spacing: .16em; font-size: .72rem; }
+.brand-drip .brand-mark { font-family: "Instrument Serif", Georgia, serif; font-size: 1.35rem; font-weight: 400; font-style: italic; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
 
 .section { padding: clamp(92px, 11vw, 150px) 0; }
@@ -186,31 +181,21 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .case-heading h2 em { color: #746576; }
 .case-heading > p { max-width: 440px; margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.75; }
 .case-grid { display: grid; gap: 30px; }
-.case-card { padding: clamp(28px, 4vw, 50px); border: 2px solid var(--line); background: var(--white); box-shadow: 6px 6px 0 var(--ink); }
+.case-card { position: relative; isolation: isolate; overflow: hidden; padding: clamp(28px, 4vw, 50px); border: 2px solid var(--line); background: var(--white); box-shadow: 6px 6px 0 var(--ink); }
 .case-card:nth-child(2) { background: var(--blue); }
+.case-card > :not(.case-photo) { position: relative; z-index: 1; }
+.case-photo { position: absolute; z-index: 0; inset: 0; opacity: .14; background-position: center; background-repeat: no-repeat; background-size: cover; filter: grayscale(.55) contrast(1.08); mix-blend-mode: multiply; pointer-events: none; }
+.case-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.42) 48%, rgba(255,255,255,.16) 100%); }
+.case-card-drip .case-photo { opacity: .13; filter: saturate(.62) contrast(1.1); }
+.case-card-drip .case-photo::after { background: linear-gradient(90deg, rgba(205,226,225,.78) 0%, rgba(205,226,225,.32) 52%, rgba(205,226,225,.08) 100%); }
 .case-top { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(41,35,31,.55); color: var(--muted); text-transform: uppercase; letter-spacing: .09em; font-size: .53rem; font-weight: 700; }
 .case-main { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(44px, 6vw, 82px); align-items: start; margin-top: 42px; }
 .case-type { margin: 0 0 10px; color: #865f51; text-transform: uppercase; letter-spacing: .09em; font-size: .58rem; font-weight: 700; }
 .case-story h3 { max-width: 720px; margin: 0; font-family: "Instrument Serif", Georgia, serif; font-size: clamp(2.7rem, 4.7vw, 4.8rem); font-weight: 400; line-height: .95; letter-spacing: -.025em; }
 .case-story > p:last-child { max-width: 690px; margin: 24px 0 0; color: #544c46; font-size: .84rem; line-height: 1.7; }
 .case-side { display: grid; gap: 22px; }
-.case-visual { position: relative; min-height: 205px; overflow: hidden; border: 1.5px solid var(--line); }
-.case-visual-kick { color: var(--white); background: #191816; }
-.case-visual-drip { color: var(--white); background: #304b59; }
-.case-visual::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px); background-size: 24px 24px; }
-.case-visual-top { position: relative; z-index: 2; display: flex; justify-content: space-between; gap: 12px; padding: 13px 15px; border-bottom: 1px solid rgba(255,255,255,.34); text-transform: uppercase; letter-spacing: .08em; font-size: .46rem; font-weight: 700; }
-.case-visual svg { position: absolute; z-index: 1; width: 92%; height: auto; left: 4%; bottom: 17px; overflow: visible; }
-.case-visual .shoe-fill { fill: rgba(255,255,255,.09); }
-.case-visual .shoe-outline, .case-visual .shoe-detail { fill: none; stroke: #f4eee3; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-.case-visual .shoe-detail { stroke-width: 2; opacity: .72; }
-.case-visual .shoe-accent { fill: var(--blue); stroke: #f4eee3; stroke-width: 2; }
-.case-visual .shoe-stack { fill: rgba(255,255,255,.06); stroke: #f4eee3; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-.case-visual .shoe-stack-front { transform: translate(-10px, 18px) rotate(-4deg); transform-origin: center; }
-.case-visual .shoe-stack-back { opacity: .52; transform: translate(-18px, -8px) rotate(5deg); transform-origin: center; }
-.case-visual-rail { position: absolute; z-index: 3; right: 12px; bottom: 11px; left: 12px; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid rgba(255,255,255,.62); background: rgba(16,16,15,.72); }
-.case-visual-rail span { padding: 7px 5px; border-left: 1px solid rgba(255,255,255,.42); text-align: center; letter-spacing: .08em; font-size: .43rem; font-weight: 700; }
-.case-visual-rail span:first-child { border-left: 0; }
-.case-role { padding-top: 20px; border-top: 1px solid rgba(41,35,31,.45); }
+.case-role { padding: 22px; border: 1px solid rgba(41,35,31,.45); background: rgba(255,255,255,.58); backdrop-filter: blur(4px); }
+.case-card-drip .case-role { background: rgba(205,226,225,.58); }
 .case-role > p { margin: 0 0 15px; text-transform: uppercase; letter-spacing: .09em; font-size: .57rem; font-weight: 700; }
 .case-role ul { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
 .case-role li { position: relative; padding-left: 15px; color: #544c46; font-size: .73rem; line-height: 1.55; }
@@ -274,15 +259,13 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 @media (max-width: 1000px) {
   .hero { padding-top: 120px; }
   .hero-grid { grid-template-columns: 1.05fr .75fr; gap: 50px; }
-  .hero h1 { font-size: clamp(4.2rem, 9.2vw, 6.8rem); }
+  .hero h1 { font-size: clamp(3.9rem, 8.5vw, 6.2rem); }
   .hero-portrait figcaption { right: -4px; }
   .profile-grid { grid-template-columns: 1fr .75fr; gap: 60px; }
   .experience-layout { grid-template-columns: .8fr 1.2fr; gap: 60px; }
   .case-card { padding: 30px; }
   .case-main { grid-template-columns: 1fr; gap: 32px; }
-  .case-side { grid-template-columns: 1fr 1fr; align-items: start; }
-  .case-visual { min-height: 195px; }
-  .case-role { padding: 20px 0 0; }
+  .case-photo { background-position: 65% center; }
   .capability-grid { grid-template-columns: 1fr 1fr; }
   .capability-card { border-bottom: 2px solid var(--line); }
   .capability-card:nth-child(odd) { border-left: 0; }
@@ -309,6 +292,8 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .proof div { min-height: 108px; padding: 16px; }
   .proof div:nth-child(odd) { border-left: 0; }
   .proof div:nth-child(n+3) { border-top: 2px solid var(--line); }
+  .ticker { padding: 14px 0; }
+  .brand-logo { min-width: 148px; min-height: 70px; padding-inline: 18px; }
   .section { padding: 88px 0; }
   .section-head { align-items: flex-start; }
   .section-head span { text-align: right; }
@@ -328,8 +313,8 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .case-top { display: grid; gap: 8px; }
   .case-top span:last-child { text-align: left; }
   .case-main { margin-top: 32px; }
-  .case-side { grid-template-columns: 1fr; }
-  .case-visual { min-height: 188px; }
+  .case-photo { opacity: .1; background-position: 60% center; }
+  .case-role { padding: 18px; }
   .case-story h3 { font-size: clamp(2.55rem, 13vw, 3.6rem); }
   .case-metrics { grid-template-columns: 1fr 1fr; }
   .case-metric { min-height: 126px; border-top: 1px solid rgba(41,35,31,.45); }
