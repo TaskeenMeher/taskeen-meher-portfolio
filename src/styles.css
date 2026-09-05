@@ -241,14 +241,14 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .education > article + article { padding-left: 28px; border-left: 1px solid var(--line); }
 .education-card-top { min-height: 54px; display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 24px; }
 .education-kicker { max-width: 132px; margin: 2px 0 0; color: var(--muted); text-align: right; text-transform: uppercase; letter-spacing: .11em; font-size: .52rem; line-height: 1.35; }
-.education-logo { position: relative; flex: 0 0 auto; width: 150px; height: 54px; overflow: hidden; border: 1.5px solid var(--line); background: var(--white); box-shadow: 2px 2px 0 var(--ink); }
+.education-logo, .education-google-lockup { position: relative; flex: 0 0 auto; width: 150px; height: 54px; overflow: hidden; border: 1.5px solid var(--line); background: var(--white); box-shadow: 2px 2px 0 var(--ink); }
 .education-logo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .education-logo-jain { background: #061f54; }
 .education-logo-jain img { transform: scale(1.55); }
 .education-logo-cmr img { transform: scale(1.08); }
-.education-google-lockup { display: grid; gap: 3px; }
-.education-google-lockup small { color: var(--muted); font-size: .5rem; }
-.google-wordmark { display: inline-flex; font-size: 1.12rem; font-weight: 600; letter-spacing: -.04em; }
+.education-google-lockup { display: grid; place-content: center; justify-items: center; gap: 3px; }
+.education-google-lockup small { color: var(--muted); font-size: .52rem; line-height: 1; }
+.google-wordmark { display: inline-flex; font-size: 1.55rem; font-weight: 600; letter-spacing: -.04em; line-height: 1; }
 .google-wordmark i { font-style: normal; }
 .google-wordmark i:nth-child(1), .google-wordmark i:nth-child(4) { color: #4285f4; }
 .google-wordmark i:nth-child(2), .google-wordmark i:nth-child(6) { color: #ea4335; }
@@ -358,7 +358,7 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .education { grid-template-columns: 1fr; }
   .education > article, .education > article + article { padding: 24px 0; border-left: 0; border-bottom: 1px solid var(--line); }
   .education > article:last-child { border-bottom: 0; }
-  .education-logo { width: 142px; height: 52px; }
+  .education-logo, .education-google-lockup { width: 142px; height: 52px; }
   .contact { width: calc(100% - 28px); padding: 38px 24px; }
   .contact-kicker { margin-bottom: 44px; }
   .contact-bottom { display: grid; gap: 34px; margin-top: 42px; }
