@@ -13,14 +13,18 @@ const experience = [
     summary:
       "I deliver end-to-end technical builds and growth retainers, coordinating work from discovery and scoping through launch, optimisation and renewal planning.",
     points: [
-      "Write technical scopes, requirement documentation, risk logs and mitigation plans across pre-sales and delivery phases.",
+      "Deliver one-time Shopify and Shopify Plus builds with a 100% on-time, within-budget record and zero escalations.",
+      "Lead technical scoping, onboarding and solution architecture across pre-sales and delivery phases.",
+      "Write technical scopes and requirement documentation, then maintain risk logs with clear mitigation plans.",
       "Manage a live retainer backlog of 15 to 20+ tickets across enhancements, CRO initiatives and performance optimisation.",
-      "Run sprint planning, stand-ups, demos, QA and UAT while keeping scope, dependencies and decisions visible.",
-      "Coordinate developers, designers, QA, CRO and GA4 specialists, including A/B testing tasks and analytics-led improvements.",
-      "Review growth roadmaps, plan new initiatives and conduct client questionnaires to shape the next six-month programme.",
-      "Use AI tools to speed up SOW creation, requirement documentation and early risk analysis.",
+      "Drive agile execution through structured sprint planning, stand-ups, demos, QA and UAT cycles.",
+      "Partner with developers, designers, QA, CRO and GA4 specialists to deliver data-driven ecommerce improvements.",
+      "Improve conversion rates, AOV and site performance through analytics-led optimisation strategies.",
+      "Review growth roadmaps, plan initiatives, coordinate A/B testing tasks and conduct client questionnaires to shape the next six-month programme.",
+      "Leverage AI to accelerate SOW creation, requirement documentation, risk analysis and feedback workflows.",
+      "Set up automated PM reports for internal stakeholders, improving the consistency and visibility of delivery updates.",
       "Track financials, risks and KPIs, strengthen client relationships and support retainer renewals.",
-      <>Maintain a 100% on-time and within-budget delivery record with zero escalations, including work for <strong>KickGame</strong>, <strong>DripModa</strong>, <strong>Revitive</strong>, <strong>RPSDY</strong>, <strong>YAGI</strong> and <strong>SEERs</strong>.</>,
+      <>Deliver scalable solutions for brands including <strong>KickGame</strong>, <strong>DripModa</strong>, <strong>Revitive</strong>, <strong>RPSDY</strong>, <strong>YAGI</strong> and <strong>SEERs</strong>.</>,
     ],
     tags: ["Shopify Plus", "Technical scoping", "Retainers", "CRO"],
   },
@@ -53,11 +57,14 @@ const experience = [
       "I was the day-to-day client lead for a broad portfolio of high-growth ecommerce brands and Shopify B2B work.",
     points: [
       "Defined scopes, objectives and deliverables with stakeholders, then identified risks and put mitigation plans in place.",
+      "Consistently achieved a perfect 5/5 KPI scorecard.",
       "Coordinated developers, designers and QA teams to keep project delivery efficient and responsibilities clear.",
-      "Acted as the main point of contact for clients, handled day-to-day questions and maintained alignment with project goals.",
-      "Ran design workshops and used data to guide conversion and website speed improvements.",
-      "Maintained an average CSAT of 4.5/5 and consistently achieved a 5/5 KPI scorecard.",
-      "Identified relevant opportunities to extend accounts into other agency services.",
+      "Managed clients proactively, building and maintaining strong day-to-day relationships.",
+      "Maintained an average client satisfaction score of 4.5/5.",
+      "Acted as the main point of contact for clients, addressed enquiries and maintained alignment with project goals.",
+      "Conducted design workshops to clarify customer journeys and delivery priorities.",
+      "Used data-led decision-making to contribute to a 2% CVR improvement and a 75% average increase in website speed scores.",
+      "Identified relevant opportunities to extend merchant accounts into other agency services.",
       "Worked hands-on with Shopify B2B environments.",
       <>Managed accounts including <strong>boAt</strong>, <strong>Slurrp Farm</strong>, <strong>Enamor</strong>, <strong>Durex</strong>, <strong>Urban Monkey</strong>, <strong>4700 BC</strong>, <strong>Superkicks</strong>, <strong>Two Brothers Organic Farm</strong>, <strong>FableStreet</strong>, <strong>Nasher Miles</strong>, <strong>Black Tulip</strong>, <strong>Rihaa</strong>, <strong>PinkFort</strong>, <strong>March Jewellery</strong>, <strong>Nestroots</strong>, <strong>Reise Moto</strong> and <strong>Power Gummies</strong>.</>,
     ],
@@ -89,9 +96,13 @@ const experience = [
     summary:
       "My first commercial role built the client and growth foundation I now bring to project delivery.",
     points: [
-      "Developed lead-generation processes and built a referral programme.",
-      "Handled cold outreach, scheduled product demonstrations and supported deal closure.",
-      "Structured sales strategies and drafted business proposals and contracts.",
+      "Developed processes for lead generation.",
+      "Built a referral programme to support lead generation.",
+      "Conducted cold outreach to prospective clients.",
+      "Closed deals and supported prospects through the sales process.",
+      "Scheduled and delivered product demonstrations.",
+      "Structured sales strategies around business goals and market opportunities.",
+      "Drafted business proposals and contracts.",
       "Contributed to a 30% increase in sales.",
     ],
     tags: ["Sales", "Growth", "Proposals"],
@@ -104,26 +115,26 @@ const impact = [
     metric: "+2%",
     metricLabel: "conversion rate improvement",
     title: "CRO and site performance",
-    copy: "Used performance data to prioritise Shopify Plus improvements that increased CVR by 2% and lifted average site speed scores by 75%.",
+    copy: "Used performance data to prioritise website improvements that increased CVR by 2% and lifted average site speed scores by 75%.",
     tags: ["Shopify Plus", "CRO", "Performance"],
     className: "impact-card-lilac",
   },
   {
     number: "02",
     metric: "100%",
-    metricLabel: "on time and within budget",
-    title: "Wiro delivery record",
-    copy: "Delivered technical builds and retainer work on schedule and within budget, with zero escalations recorded in the resume period.",
+    metricLabel: "on-time one-time builds",
+    title: "Delivered within budget",
+    copy: "Delivered one-time Shopify and Shopify Plus builds on schedule and within budget, with zero escalations.",
     tags: ["Delivery", "UAT", "Risk"],
     className: "impact-card-blue",
   },
   {
     number: "03",
     metric: "2x",
-    metricLabel: "faster project delivery",
-    title: "Two-team delivery operations",
-    copy: "Managed two teams across project delivery and client support, improved onboarding and removed operational blockers so work could move twice as fast.",
-    tags: ["Operations", "Teams", "Process"],
+    metricLabel: "delivery speed at Growth99",
+    title: "Project and support teams",
+    copy: "At Growth99, I managed the Project and SSM teams, reduced roadblocks and introduced clearer operating processes, resulting in a 2x increase in project delivery speed.",
+    tags: ["Growth99", "Project team", "SSM team"],
     className: "impact-card-coral",
   },
   {
@@ -228,6 +239,12 @@ const brands = [
   { name: "Revitive", mark: "revitive", className: "brand-revitive" },
   { name: "KickGame", mark: "KICKGAME", className: "brand-kick" },
   { name: "DripModa", mark: "DripModa", className: "brand-drip" },
+  { name: "Nestroots", mark: "NESTROOTS", className: "brand-nestroots", sharkTank: true },
+  { name: "Jack & Jones", mark: "JACK & JONES", className: "brand-jack" },
+  { name: "Vero Moda", mark: "VERO MODA", className: "brand-vero" },
+  { name: "ONLY", mark: "ONLY", className: "brand-only" },
+  { name: "Baggit", mark: "BAGGIT", className: "brand-baggit" },
+  { name: "4700 BC", mark: "4700 BC", className: "brand-4700" },
 ];
 
 function Arrow() {
@@ -343,7 +360,7 @@ function App() {
 
           <div className="proof" aria-label="Career highlights" data-parallax="0.01">
             <div className="proof-lilac"><strong>4+</strong><span>years managing cross-functional projects</span></div>
-            <div className="proof-blue"><strong>100%</strong><span>on-time and within-budget delivery at WIRO Shopify Premier Agency</span></div>
+            <div className="proof-blue"><strong>100%</strong><span>one-time builds delivered on time and within budget at Wiro</span></div>
             <div className="proof-coral"><strong>4.5/5</strong><span>average client satisfaction</span></div>
             <div className="proof-yellow"><strong>15 to 20+</strong><span>active tickets across retainer backlogs</span></div>
           </div>
@@ -407,7 +424,7 @@ function App() {
         <section className="section experience shell" id="experience">
           <div className="section-head" data-reveal>
             <p>03 / Experience</p>
-            <span>May 2021 - Present</span>
+            <span>Career history</span>
           </div>
           <div className="experience-layout">
             <div className="experience-intro" data-reveal>
@@ -533,7 +550,9 @@ function App() {
             <div className="education" data-reveal>
               <article>
                 <div className="education-card-top">
-                  <div className="education-wordmark education-wordmark-jain" aria-hidden="true">JAIN</div>
+                  <div className="education-logo education-logo-jain">
+                    <img src={`${base}education-jain-university.png`} alt="JAIN University logo" />
+                  </div>
                   <p className="education-kicker">Post-graduation</p>
                 </div>
                 <h3>MBA, Project Management</h3>
@@ -541,7 +560,9 @@ function App() {
               </article>
               <article>
                 <div className="education-card-top">
-                  <div className="education-wordmark education-wordmark-cmr" aria-hidden="true">CMR</div>
+                  <div className="education-logo education-logo-cmr">
+                    <img src={`${base}education-cmr-university.png`} alt="CMR University logo" />
+                  </div>
                   <p className="education-kicker">Undergraduate</p>
                 </div>
                 <h3>BBA (Honours)</h3>

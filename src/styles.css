@@ -112,6 +112,8 @@ img { display: block; max-width: 100%; }
 .brand-revitive .brand-mark { font-size: 1.2rem; letter-spacing: -.04em; }
 .brand-kick .brand-mark { letter-spacing: .16em; font-size: .72rem; }
 .brand-drip .brand-mark { font-family: "Instrument Serif", Georgia, serif; font-size: 1.35rem; font-weight: 400; font-style: italic; }
+.brand-nestroots .brand-mark, .brand-jack .brand-mark, .brand-vero .brand-mark, .brand-only .brand-mark, .brand-baggit .brand-mark, .brand-4700 .brand-mark { font-size: .78rem; letter-spacing: .09em; }
+.brand-only .brand-mark, .brand-baggit .brand-mark { font-family: "Archivo Black", sans-serif; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
 
 .section { padding: clamp(68px, 8vw, 108px) 0; }
@@ -137,7 +139,7 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .impact-heading h2 em { color: var(--yellow); }
 .impact-heading > p { max-width: 390px; margin: 0; color: #b9afa8; line-height: 1.7; }
 .impact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.impact-card { min-height: 315px; padding: clamp(22px, 2.6vw, 30px); border: 2px solid var(--line); color: var(--ink); display: flex; flex-direction: column; box-shadow: 6px 6px 0 #766a63; transition: transform .25s ease, box-shadow .25s ease; }
+.impact-card { min-height: 290px; padding: clamp(22px, 2.6vw, 30px); border: 2px solid var(--line); color: var(--ink); display: flex; flex-direction: column; box-shadow: 6px 6px 0 #766a63; transition: transform .25s ease, box-shadow .25s ease; }
 .impact-card:hover { transform: translate(-2px, -2px) rotate(-.18deg); box-shadow: 8px 8px 0 #766a63; }
 .impact-card-lilac { background: var(--lilac); }
 .impact-card-blue { background: var(--blue); }
@@ -145,10 +147,10 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .impact-card-yellow { background: var(--yellow); }
 .impact-topline { display: flex; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid rgba(41,35,31,.65); text-transform: uppercase; letter-spacing: .1em; font-size: .59rem; font-weight: 700; }
 .impact-metric { display: grid; margin-top: 20px; }
-.impact-metric strong { font-family: "Archivo Black", sans-serif; font-size: clamp(4rem, 6.8vw, 6.4rem); font-weight: 400; line-height: .85; letter-spacing: -.075em; }
-.impact-card:last-child .impact-metric strong { font-size: clamp(2.8rem, 4.8vw, 4.6rem); }
+.impact-metric strong { font-family: "Archivo Black", sans-serif; font-size: clamp(3.35rem, 5.5vw, 5.3rem); font-weight: 400; line-height: .86; letter-spacing: -.07em; }
+.impact-card:last-child .impact-metric strong { font-size: clamp(2.45rem, 4vw, 3.8rem); }
 .impact-metric span { margin-top: 8px; text-transform: uppercase; letter-spacing: .08em; font-size: .62rem; font-weight: 700; }
-.impact-copy { margin-top: auto; padding-top: 20px; }
+.impact-copy { margin-top: 18px; padding-top: 0; }
 .impact-copy h3 { margin: 0 0 12px; font-size: 1.3rem; line-height: 1.1; }
 .impact-copy p { max-width: 530px; margin: 0; color: #544943; font-size: .85rem; line-height: 1.65; }
 .impact-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
@@ -173,7 +175,7 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .timeline-top time { white-space: nowrap; font-style: italic; }
 .timeline-summary { max-width: 680px; margin: 18px 0 13px; color: #49423d; font-size: .88rem; line-height: 1.6; }
 .timeline-points { max-width: 700px; display: grid; gap: 6px; margin: 0 0 18px; padding: 0; list-style: none; }
-.timeline-points li { position: relative; padding-left: 17px; color: #625a54; font-size: .75rem; line-height: 1.65; }
+.timeline-points li { position: relative; padding-left: 17px; color: #625a54; font-size: .8rem; line-height: 1.58; }
 .timeline-points li::before { content: ""; position: absolute; top: .7em; left: 0; width: 5px; height: 5px; border-radius: 50%; background: #8b6658; }
 .timeline-points strong { color: var(--ink); font-weight: 700; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -190,8 +192,8 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .case-card > :not(.case-photo) { position: relative; z-index: 1; }
 .case-photo { position: absolute; z-index: 0; inset: 0; opacity: .14; background-position: center; background-repeat: no-repeat; background-size: cover; filter: grayscale(.55) contrast(1.08); mix-blend-mode: multiply; pointer-events: none; }
 .case-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.42) 48%, rgba(255,255,255,.16) 100%); }
-.case-card-drip .case-photo { opacity: .13; filter: saturate(.62) contrast(1.1); }
-.case-card-drip .case-photo::after { background: linear-gradient(90deg, rgba(205,226,225,.78) 0%, rgba(205,226,225,.32) 52%, rgba(205,226,225,.08) 100%); }
+.case-card-drip .case-photo { opacity: .24; filter: saturate(.8) contrast(1.12); }
+.case-card-drip .case-photo::after { background: linear-gradient(90deg, rgba(205,226,225,.62) 0%, rgba(205,226,225,.2) 52%, rgba(205,226,225,.03) 100%); }
 .case-top { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(41,35,31,.55); color: var(--muted); text-transform: uppercase; letter-spacing: .09em; font-size: .53rem; font-weight: 700; }
 .case-main { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(40px, 5vw, 70px); align-items: start; margin-top: 34px; }
 .case-type { margin: 0 0 10px; color: #865f51; text-transform: uppercase; letter-spacing: .09em; font-size: .58rem; font-weight: 700; }
@@ -239,9 +241,11 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
 .education > article + article { padding-left: 28px; border-left: 1px solid var(--line); }
 .education-card-top { min-height: 54px; display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 24px; }
 .education-kicker { max-width: 132px; margin: 2px 0 0; color: var(--muted); text-align: right; text-transform: uppercase; letter-spacing: .11em; font-size: .52rem; line-height: 1.35; }
-.education-wordmark { display: inline-flex; align-items: center; justify-content: center; min-width: 66px; min-height: 42px; padding: 7px 9px; border: 1.5px solid var(--line); background: var(--white); font-family: "Archivo Black", sans-serif; line-height: 1; box-shadow: 2px 2px 0 var(--ink); }
-.education-wordmark-jain { color: #8d2141; letter-spacing: .05em; }
-.education-wordmark-cmr { color: #245482; letter-spacing: .08em; }
+.education-logo { position: relative; flex: 0 0 auto; width: 150px; height: 54px; overflow: hidden; border: 1.5px solid var(--line); background: var(--white); box-shadow: 2px 2px 0 var(--ink); }
+.education-logo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.education-logo-jain { background: #061f54; }
+.education-logo-jain img { transform: scale(1.55); }
+.education-logo-cmr img { transform: scale(1.08); }
 .education-google-lockup { display: grid; gap: 3px; }
 .education-google-lockup small { color: var(--muted); font-size: .5rem; }
 .google-wordmark { display: inline-flex; font-size: 1.12rem; font-weight: 600; letter-spacing: -.04em; }
@@ -325,7 +329,7 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .profile-copy .lead { font-size: 2rem; }
   .impact-heading, .case-heading, .capabilities-heading { display: grid; gap: 26px; margin: 40px 0 34px; }
   .impact-grid { grid-template-columns: 1fr; }
-  .impact-card { min-height: 325px; }
+  .impact-card { min-height: 300px; }
   .experience-intro { position: static; }
   .timeline-item { grid-template-columns: 34px 1fr; }
   .timeline-top { display: grid; gap: 10px; }
@@ -354,6 +358,7 @@ h2 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; text-
   .education { grid-template-columns: 1fr; }
   .education > article, .education > article + article { padding: 24px 0; border-left: 0; border-bottom: 1px solid var(--line); }
   .education > article:last-child { border-bottom: 0; }
+  .education-logo { width: 142px; height: 52px; }
   .contact { width: calc(100% - 28px); padding: 38px 24px; }
   .contact-kicker { margin-bottom: 44px; }
   .contact-bottom { display: grid; gap: 34px; margin-top: 42px; }
