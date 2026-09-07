@@ -248,7 +248,27 @@ const brands = [
 ];
 
 function Arrow() {
-  return <span aria-hidden="true">↗</span>;
+  return (
+    <svg className="arrow-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M3 13 13 3M5 3h8v8" />
+    </svg>
+  );
+}
+
+function DownArrow() {
+  return (
+    <svg className="arrow-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M8 2v12m-5-5 5 5 5-5" />
+    </svg>
+  );
+}
+
+function UpArrow() {
+  return (
+    <svg className="arrow-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M8 14V2m-5 5 5-5 5 5" />
+    </svg>
+  );
 }
 
 function BrandGroup({ hidden = false }: { hidden?: boolean }) {
@@ -331,7 +351,7 @@ function App() {
           <div className="hero-pills" aria-label="Professional focus" data-parallax="0.012">
             <span className="pill pill-lilac">✦ Technical PM</span>
             <span className="pill pill-yellow">◫ Project delivery</span>
-            <span className="pill pill-coral">↗ Operations &amp; growth</span>
+            <span className="pill pill-coral"><Arrow /> Operations &amp; growth</span>
             <span className="pill pill-blue">⌁ Bangalore | India</span>
           </div>
 
@@ -344,7 +364,7 @@ function App() {
                 I turn complex requirements into practical delivery plans, aligned cross-functional teams and clear outcomes. My experience covers one-time builds, retainer projects, process improvement, client growth and performance-led ecommerce work.
               </p>
               <div className="hero-actions">
-                <a className="button button-dark" href="#impact">See my impact <span aria-hidden="true">↓</span></a>
+                <a className="button button-dark" href="#impact">See my impact <DownArrow /></a>
                 <a className="button button-paper" href={`${base}Taskeen-Meher-Resume.pdf`} download>Download résumé <Arrow /></a>
               </div>
             </div>
@@ -610,7 +630,7 @@ function App() {
         <a className="mark mark-small" href="#top" aria-label="Back to top"><span>TM</span></a>
         <p>Technical Project Manager · Project delivery, operations and growth</p>
         <p>© 2026 Taskeen Meher</p>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">Back to top <UpArrow /></a>
       </footer>
     </>
   );

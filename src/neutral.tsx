@@ -96,7 +96,27 @@ const deliverySystem = [
 ];
 
 function Arrow() {
-  return <span aria-hidden="true">↗</span>;
+  return (
+    <svg className="arrow-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M3 13 13 3M5 3h8v8" />
+    </svg>
+  );
+}
+
+function RightArrow() {
+  return (
+    <svg className="arrow-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M2 8h12m-5-5 5 5-5 5" />
+    </svg>
+  );
+}
+
+function UpArrow() {
+  return (
+    <svg className="arrow-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M8 14V2m-5 5 5-5 5 5" />
+    </svg>
+  );
 }
 
 function NeutralPortfolio() {
@@ -151,12 +171,12 @@ function NeutralPortfolio() {
               <p className="n-role">Technical Project Manager<br />Shopify ecosystem</p>
               <p className="n-intro">I align people, scope and growth goals to turn complex ecommerce programs into calm, measurable delivery.</p>
               <div className="n-hero-actions">
-                <a href="#work">Explore my impact <span aria-hidden="true">→</span></a>
+                <a href="#work">Explore my impact <RightArrow /></a>
                 <a href="mailto:taskeenmeher13@gmail.com">Start a conversation <Arrow /></a>
               </div>
               <div className="n-hero-brief" aria-label="Current professional snapshot">
                 <p><span>Current</span><strong>Technical PM at Wiro</strong></p>
-                <p><span>Coverage</span><strong>Discovery → launch → growth</strong></p>
+                <p><span>Coverage</span><strong>Discovery · launch · growth</strong></p>
                 <p><span>Strength</span><strong>Client trust + delivery control</strong></p>
               </div>
             </div>
@@ -293,7 +313,7 @@ function NeutralPortfolio() {
         <a className="n-wordmark" href="#top"><span>Taskeen</span><span>Meher.</span></a>
         <p>Technical Project Manager · Shopify ecosystem</p>
         <p>© 2026</p>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">Back to top <UpArrow /></a>
       </footer>
     </>
   );
