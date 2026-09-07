@@ -1,4 +1,4 @@
-import { StrictMode, useEffect } from "react";
+import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 import { setupParallax } from "./parallax";
@@ -271,6 +271,15 @@ function UpArrow() {
   );
 }
 
+function CopyIcon() {
+  return (
+    <svg className="copy-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <rect x="5.5" y="2.5" width="8" height="9" />
+      <path d="M10.5 13.5h-8v-9" />
+    </svg>
+  );
+}
+
 function BrandGroup({ hidden = false }: { hidden?: boolean }) {
   return (
     <div aria-hidden={hidden || undefined}>
@@ -294,6 +303,34 @@ function BrandGroup({ hidden = false }: { hidden?: boolean }) {
 
 function App() {
   const base = import.meta.env.BASE_URL;
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
+
+  const copyEmail = async () => {
+    const email = "taskeenmeher13@gmail.com";
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(email);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = email;
+        textArea.setAttribute("readonly", "");
+        textArea.style.position = "fixed";
+        textArea.style.opacity = "0";
+        document.body.append(textArea);
+        textArea.select();
+        const copied = document.execCommand("copy");
+        textArea.remove();
+        if (!copied) throw new Error("Copy command was unavailable");
+      }
+
+      setCopyState("copied");
+    } catch {
+      setCopyState("failed");
+    }
+
+    window.setTimeout(() => setCopyState("idle"), 1800);
+  };
 
   useEffect(() => {
     const cleanupParallax = setupParallax();
@@ -342,7 +379,18 @@ function App() {
             <a href="#case-studies">Case studies</a>
             <a href="#capabilities">Capabilities</a>
           </div>
-          <a className="nav-cta" href="mailto:taskeenmeher13@gmail.com">Get in touch <Arrow /></a>
+          <div className="nav-contact">
+            <a className="nav-cta" href="mailto:taskeenmeher13@gmail.com">Get in touch <Arrow /></a>
+            <button
+              className={`copy-email-link${copyState === "copied" ? " is-copied" : ""}`}
+              type="button"
+              onClick={copyEmail}
+              aria-live="polite"
+            >
+              <CopyIcon />
+              {copyState === "copied" ? "Copied" : copyState === "failed" ? "Try again" : "Copy email"}
+            </button>
+          </div>
         </nav>
       </header>
 
@@ -619,7 +667,18 @@ function App() {
           <div className="contact-bottom">
             <p>I&apos;d be glad to discuss technical project management, project delivery, operations, client programmes and growth roles across industries.</p>
             <div className="contact-actions">
-              <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
+              <div className="email-actions">
+                <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
+                <button
+                  className={`copy-email-link${copyState === "copied" ? " is-copied" : ""}`}
+                  type="button"
+                  onClick={copyEmail}
+                  aria-live="polite"
+                >
+                  <CopyIcon />
+                  {copyState === "copied" ? "Copied" : copyState === "failed" ? "Try again" : "Copy email"}
+                </button>
+              </div>
               <a className="button button-paper" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
             </div>
           </div>
