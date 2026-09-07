@@ -47,7 +47,7 @@ const experience = [
     company: "Growth99",
     role: "Project Manager",
     period: "Mar 2022 — Sep 2022",
-    copy: "Managed Project and SSM teams, improved onboarding and reduced operational blockers across delivery.",
+    copy: "Managed project and support teams, improved onboarding and reduced operational blockers across delivery.",
   },
   {
     company: "QuickMove Technologies",

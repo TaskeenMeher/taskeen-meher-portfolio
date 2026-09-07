@@ -133,8 +133,8 @@ const impact = [
     metric: "2x",
     metricLabel: "delivery speed at Growth99",
     title: "Project and support teams",
-    copy: "At Growth99, I managed the Project and SSM teams, reduced roadblocks and introduced clearer operating processes, resulting in a 2x increase in project delivery speed.",
-    tags: ["Growth99", "Project team", "SSM team"],
+    copy: "At Growth99, I managed the project and support teams, reduced roadblocks and introduced clearer operating processes, resulting in a 2x increase in project delivery speed.",
+    tags: ["Growth99", "Project team", "Support team"],
     className: "impact-card-coral",
   },
   {
@@ -389,7 +389,7 @@ function App() {
               <h1><span>Taskeen</span><span>Meher</span></h1>
               <h2>Technical Project Manager<br />driving delivery, operations and growth.</h2>
               <p className="hero-intro">
-                I turn complex requirements into practical delivery plans, aligned cross-functional teams and clear outcomes. My experience covers one-time builds, retainer projects, process improvement, client growth and performance-led ecommerce work.
+                I turn complex requirements into clear delivery plans, align cross-functional teams and keep work moving from discovery through launch and optimisation. Across one-time builds and long-term retainers, I improve delivery processes, strengthen client partnerships and support performance-led ecommerce growth.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#impact">See my impact <DownArrow /></a>
