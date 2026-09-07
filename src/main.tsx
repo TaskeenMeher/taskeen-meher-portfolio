@@ -271,15 +271,6 @@ function UpArrow() {
   );
 }
 
-function CopyIcon() {
-  return (
-    <svg className="copy-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-      <rect x="5.5" y="2.5" width="8" height="9" />
-      <path d="M10.5 13.5h-8v-9" />
-    </svg>
-  );
-}
-
 function BrandGroup({ hidden = false }: { hidden?: boolean }) {
   return (
     <div aria-hidden={hidden || undefined}>
@@ -379,18 +370,7 @@ function App() {
             <a href="#case-studies">Case studies</a>
             <a href="#capabilities">Capabilities</a>
           </div>
-          <div className="nav-contact">
-            <a className="nav-cta" href="mailto:taskeenmeher13@gmail.com">Get in touch <Arrow /></a>
-            <button
-              className={`copy-email-link${copyState === "copied" ? " is-copied" : ""}`}
-              type="button"
-              onClick={copyEmail}
-              aria-live="polite"
-            >
-              <CopyIcon />
-              {copyState === "copied" ? "Copied" : copyState === "failed" ? "Try again" : "Copy email"}
-            </button>
-          </div>
+          <a className="nav-cta" href="mailto:taskeenmeher13@gmail.com">Get in touch <Arrow /></a>
         </nav>
       </header>
 
@@ -667,18 +647,15 @@ function App() {
           <div className="contact-bottom">
             <p>I&apos;d be glad to discuss technical project management, project delivery, operations, client programmes and growth roles across industries.</p>
             <div className="contact-actions">
-              <div className="email-actions">
-                <a className="button button-dark" href="mailto:taskeenmeher13@gmail.com">Email me <Arrow /></a>
-                <button
-                  className={`copy-email-link${copyState === "copied" ? " is-copied" : ""}`}
-                  type="button"
-                  onClick={copyEmail}
-                  aria-live="polite"
-                >
-                  <CopyIcon />
-                  {copyState === "copied" ? "Copied" : copyState === "failed" ? "Try again" : "Copy email"}
-                </button>
-              </div>
+              <button
+                className={`button button-dark button-email-copy${copyState === "copied" ? " is-copied" : ""}`}
+                type="button"
+                onClick={copyEmail}
+                aria-label="Copy email address"
+                aria-live="polite"
+              >
+                {copyState === "copied" ? "Email copied" : copyState === "failed" ? "Try again" : "taskeenmeher13@gmail.com"}
+              </button>
               <a className="button button-paper" href="https://www.linkedin.com/in/taskeen-meher-3aa365194" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
             </div>
           </div>
